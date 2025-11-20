@@ -1,0 +1,71 @@
+i want to make a next js website on forest fire pridiction where my structuer is 
+
+project-root/
+│
+├── app/
+│   ├── layout.jsx
+│   ├── globals.css
+│   │
+│   ├── page.jsx                  --> Home page (Causes section included)
+│   │
+│   ├── about/
+│   │   └── page.jsx
+│   │
+│   ├── prediction/
+│   │   ├── page.jsx              --> AI model input, prediction UI
+│   │   └── model/                --> ML model files (optional)
+│   │
+│   ├── evidence/
+│   │   └── page.jsx              --> All your case studies + sources
+│   │
+│   ├── prevention/
+│   │   └── page.jsx
+│   │
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Footer.jsx
+│   │   ├── CauseCard.jsx         --> For displaying each cause nicely
+│   │   ├── EvidenceCard.jsx
+│   │   └── PredictionForm.jsx    --> UI for prediction input
+│   │
+│   ├── data/
+│   │   ├── causes.js             --> All research text structured
+│   │   ├── evidence.js           --> All real case studies
+│   │   └── prevention.js
+│   │
+│   └── styles/
+│       └── home.css (optional)   --> Extra page-specific styles
+│
+├── public/
+│   ├── images/
+│   │   ├── logo.png
+│   │   ├── fire-bg.jpg
+│   │   ├── evidence/
+│   │   │   ├── case1.jpg
+│   │   │   └── case2.jpg
+│   │   └── causes/
+│   │       ├── humidity.png
+│   │       ├── temperature.png
+│   │       └── lightning.png
+│   └── favicon.ico
+│
+├── lib/
+│   ├── model.js                  --> ML loading or API call logic
+│   └── utils.js                  --> helper functions
+│
+├── pages/api/
+│   └── predict.js                --> API route for prediction
+│
+├── package.json
+└── tailwind.config.js
+
+
+in home page basicly i want to show What causes forest fires? and you know that
+ 1. High temperature 
+2. Low humidity 
+3. High wind 
+4. Human activities 
+5. Dry vegetation 
+6. Lightning
+ are the main reson of forest fire. now make a greate research and i want to describe these topics one by one such that user can understand how these can cause fire in forest. and i also want to include some real evidence of these points where fire happen in forest. means i want to discuss 1 or 2 case of every point. 
+for example : 1. Human activities : give 2 more real evidence such that user can know where and how fire has occured and what cause happen there
