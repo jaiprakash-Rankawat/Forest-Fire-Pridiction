@@ -1,3 +1,5 @@
+import { renderFormattedText } from '@/lib/utils';
+
 export default function CauseCard({ cause }) {
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
@@ -13,8 +15,8 @@ export default function CauseCard({ cause }) {
 
         <div className="mb-6">
           <h4 className="text-lg font-semibold text-gray-800 mb-3">How It Causes Fires:</h4>
-          <div className="prose max-w-none text-gray-600 text-sm whitespace-pre-line">
-            {cause.detailedExplanation}
+          <div className="prose max-w-none text-gray-600 text-sm leading-relaxed">
+            {renderFormattedText(cause.detailedExplanation)}
           </div>
         </div>
 

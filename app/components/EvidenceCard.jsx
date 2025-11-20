@@ -10,6 +10,7 @@ import {
   FiChevronUp,
   FiInfo,
 } from "react-icons/fi";
+import { renderFormattedText } from "@/lib/utils";
 
 export default function EvidenceCard({ caseStudy }) {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -140,11 +141,11 @@ export default function EvidenceCard({ caseStudy }) {
           </h4>
           <div className="prose prose-sm max-w-none text-gray-700">
             <div
-              className={`transition-all duration-300 ${
+              className={`transition-all duration-300 leading-relaxed ${
                 isExpanded ? "" : "max-h-64 overflow-hidden"
               }`}
             >
-              {isExpanded ? caseStudy.detailedDescription : descriptionPreview}
+              {isExpanded ? renderFormattedText(caseStudy.detailedDescription) : renderFormattedText(descriptionPreview)}
             </div>
             {showReadMore && (
               <button
