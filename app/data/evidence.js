@@ -36,9 +36,9 @@ In 2020, PG&E pleaded guilty to 84 counts of involuntary manslaughter and one fe
       "Aging infrastructure requires proactive maintenance, not reactive repairs",
       "Utility companies must prioritize public safety over profits",
       "Vegetation management around power lines is critical",
-      "Early warning systems and evacuation routes save lives"
+      "Early warning systems and evacuation routes save lives",
     ],
-    source: "Cal Fire Investigation, NPR, PBS Frontline, ABC10"
+    source: "Cal Fire Investigation, NPR, PBS Frontline, ABC10",
   },
   {
     id: 2,
@@ -87,9 +87,9 @@ This fire exemplifies how recreational activities that seem harmless can have ca
       "Recreational shooting should be prohibited during fire season in high-risk areas",
       "Always check fire danger ratings before outdoor activities",
       "One moment of carelessness can cause billion-dollar disasters",
-      "Dense dead vegetation from drought and beetle kill creates extreme fire behavior"
+      "Dense dead vegetation from drought and beetle kill creates extreme fire behavior",
     ],
-    source: "Cal Fire, InciWeb, U.S. Forest Service"
+    source: "Cal Fire, InciWeb, U.S. Forest Service",
   },
   {
     id: 3,
@@ -138,9 +138,10 @@ These fires create a dangerous cycle: fires release carbon → atmosphere warms 
       "Arctic regions are warming 2-3x faster than the global average",
       "Heat waves that were once impossible are now occurring regularly",
       "Permafrost thawing creates new fire vulnerabilities",
-      "Smoke from massive fires can affect air quality thousands of kilometers away"
+      "Smoke from massive fires can affect air quality thousands of kilometers away",
     ],
-    source: "NASA Earth Observatory, Greenpeace Russia, MDPI Remote Sensing Journal, Moscow Times"
+    source:
+      "NASA Earth Observatory, Greenpeace Russia, MDPI Remote Sensing Journal, Moscow Times",
   },
   {
     id: 4,
@@ -189,9 +190,10 @@ Research shows:
       "Climate change is making heat waves hotter and more frequent",
       "Multi-year droughts combined with heat create unprecedented fire conditions",
       "Dead and dying trees from heat stress become catastrophic fuel sources",
-      "Temperature has a stronger correlation with fire than any other single variable"
+      "Temperature has a stronger correlation with fire than any other single variable",
     ],
-    source: "NOAA, National Geographic, U.S. Forest Service, Westerling et al. peer-reviewed studies"
+    source:
+      "NOAA, National Geographic, U.S. Forest Service, Westerling et al. peer-reviewed studies",
   },
   {
     id: 5,
@@ -244,9 +246,9 @@ The fire's remote wilderness origin made initial suppression extremely difficult
       "Lightning fires in remote areas can smolder for weeks before exploding",
       "Wilderness terrain makes early suppression extremely challenging",
       "Weather changes can transform small fires into massive conflagrations overnight",
-      "Drought conditions allow lightning fires to persist and grow"
+      "Drought conditions allow lightning fires to persist and grow",
     ],
-    source: "InciWeb, Cal Fire, U.S. Forest Service, NIFC"
+    source: "InciWeb, Cal Fire, U.S. Forest Service, NIFC",
   },
   {
     id: 6,
@@ -302,9 +304,10 @@ Lightning-caused fires in boreal regions have increased 2-5% since 1975. As the 
       "Lightning is the natural, dominant ignition source in boreal forests",
       "Dry thunderstorms can ignite dozens of fires simultaneously",
       "Remote wilderness fires are often allowed to burn naturally",
-      "Arctic warming is increasing lightning fire frequency"
+      "Arctic warming is increasing lightning fire frequency",
     ],
-    source: "National Interagency Fire Center, Alaska Interagency Coordination Center, National Geographic"
+    source:
+      "National Interagency Fire Center, Alaska Interagency Coordination Center, National Geographic",
   },
   {
     id: 7,
@@ -364,9 +367,10 @@ The combination of dry fuels with heat and wind created unprecedented fire behav
       "Multi-year droughts create fuel conditions that enable megafires",
       "When vegetation is severely drought-stressed, even living plants burn readily",
       "Fuel moisture content is one of the most critical fire danger indicators",
-      "Climate change is increasing drought severity and duration"
+      "Climate change is increasing drought severity and duration",
     ],
-    source: "Australian Government Royal Commission, NASA, BBC, Australian Bureau of Meteorology"
+    source:
+      "Australian Government Royal Commission, NASA, BBC, Australian Bureau of Meteorology",
   },
   {
     id: 8,
@@ -379,7 +383,8 @@ The combination of dry fuels with heat and wind created unprecedented fire behav
     deaths: 85,
     structuresDestroyed: "18,804",
     cost: "$16.5 billion",
-    specificCause: "Extreme Vegetation Dryness from Drought and Dead Tree Accumulation",
+    specificCause:
+      "Extreme Vegetation Dryness from Drought and Dead Tree Accumulation",
     detailedDescription: `While the Camp Fire was ignited by power equipment failure (human cause), the extreme fuel conditions from drought and dead vegetation were essential to its catastrophic spread and intensity.
 
 **Fuel Conditions:**
@@ -434,9 +439,10 @@ Satellite imagery showed:
       "Dead and dying trees from drought/beetles create extreme fuel hazards",
       "Fuel reduction and defensible space are critical in wildland-urban interface",
       "Even green vegetation burns when severely drought-stressed",
-      "Years of fuel accumulation amplify fire intensity exponentially"
+      "Years of fuel accumulation amplify fire intensity exponentially",
     ],
-    source: "Cal Fire Post-Fire Analysis, U.S. Forest Service, Sierra Nevada Conservancy"
+    source:
+      "Cal Fire Post-Fire Analysis, U.S. Forest Service, Sierra Nevada Conservancy",
   },
   {
     id: 9,
@@ -502,9 +508,9 @@ The persistent low humidity created extreme hazards:
       "Low humidity is as critical as temperature for extreme fire weather",
       "Multi-day low humidity events eliminate firefighting recovery periods",
       "Humidity below 15% creates critically dangerous fire conditions",
-      "Climate change may increase frequency of extreme low-humidity events"
+      "Climate change may increase frequency of extreme low-humidity events",
     ],
-    source: "Cal Fire, InciWeb, National Weather Service, NOAA"
+    source: "Cal Fire, InciWeb, National Weather Service, NOAA",
   },
   {
     id: 10,
@@ -563,9 +569,10 @@ Post-fire analysis showed low humidity was the primary factor in the escape:
       "Even professional fire managers can be surprised by rapid humidity drops",
       "Low humidity combined with wind creates conditions where fires cannot be controlled",
       "Spring prescribed burns in the Southwest face extreme low-humidity risks",
-      "Climate change is making low-humidity days more frequent and severe"
+      "Climate change is making low-humidity days more frequent and severe",
     ],
-    source: "U.S. Forest Service Investigation Report, InciWeb, FEMA, New Mexico authorities"
+    source:
+      "U.S. Forest Service Investigation Report, InciWeb, FEMA, New Mexico authorities",
   },
   {
     id: 11,
@@ -641,9 +648,10 @@ Many of California's worst fires occurred during Santa Ana wind events:
       "High winds can make fires completely uncontrollable regardless of firefighting resources",
       "Embers can travel over a mile, starting fires far ahead of main front",
       "Santa Ana winds create predictable extreme fire danger windows",
-      "Power lines should be de-energized before extreme wind events"
+      "Power lines should be de-energized before extreme wind events",
     ],
-    source: "Cal Fire Investigation, Ventura County Fire Department, Los Angeles Times, SCE reports"
+    source:
+      "Cal Fire Investigation, Ventura County Fire Department, Los Angeles Times, SCE reports",
   },
   {
     id: 12,
@@ -721,8 +729,9 @@ In January 2018, heavy rains fell on the burned slopes:
       "Extended wind events can sustain extreme fire behavior for weeks",
       "Multiple wind cycles prevent fire containment even with massive resources",
       "Fires burning during winds create slopes vulnerable to debris flows",
-      "Climate patterns bringing sustained winds are increasing in frequency"
+      "Climate patterns bringing sustained winds are increasing in frequency",
     ],
-    source: "Cal Fire, Ventura County Fire Department, USGS, InciWeb, NTSB Debris Flow Report"
-  }
+    source:
+      "Cal Fire, Ventura County Fire Department, USGS, InciWeb, NTSB Debris Flow Report",
+  },
 ];

@@ -1,10 +1,36 @@
-import { evidence } from '../data/evidence';
-import EvidenceCard from '../components/EvidenceCard';
+import { evidence } from "../data/evidence";
+import EvidenceCard from "../components/EvidenceCard";
+import {
+  FiAlertTriangle,
+  FiBookOpen,
+  FiFileText,
+  FiGlobe,
+  FiShield,
+  FiTrendingUp,
+} from "react-icons/fi";
 
 export const metadata = {
-  title: 'Case Studies & Evidence | Forest Fire Prediction',
-  description: 'Real-world forest fire incidents documented with detailed analysis of causes, impacts, and lessons learned.',
+  title: "Case Studies & Evidence | Forest Fire Prediction",
+  description:
+    "Real-world forest fire incidents documented with detailed analysis of causes, impacts, and lessons learned.",
 };
+
+const stats = [
+  { id: 1, name: "Case Studies", value: evidence.length, icon: FiFileText },
+  {
+    id: 2,
+    name: "Primary Causes",
+    value: new Set(evidence.map((item) => item.causeName)).size,
+    icon: FiAlertTriangle,
+  },
+  {
+    id: 3,
+    name: "Years Covered",
+    value: new Set(evidence.map((item) => new Date(item.date).getFullYear()))
+      .size,
+    icon: FiTrendingUp,
+  },
+];
 
 export default function EvidencePage() {
   const groupedEvidence = evidence.reduce((acc, caseStudy) => {
@@ -15,54 +41,197 @@ export default function EvidencePage() {
     return acc;
   }, {});
 
+  // Sort cases by date (newest first)
+  Object.keys(groupedEvidence).forEach((cause) => {
+    groupedEvidence[cause].sort((a, b) => new Date(b.date) - new Date(a.date));
+  });
+
   return (
-    <div className="min-h-screen py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            📚 Real-World Fire Evidence
-          </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Documented case studies of major forest fires, organized by their primary causes. 
-            Each case includes detailed information about how specific conditions led to devastating fires, 
-            backed by official investigations and research.
-          </p>
+    <div className="min-h-screen bg-gray-50">
+      {/* Hero Section */}
+      <div className="bg-gradient-to-r from-orange-600 to-red-600 text-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-4xl mx-auto">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+              Understanding Wildfires Through{" "}
+              <span className="text-yellow-300">Real-World Evidence</span>
+            </h1>
+            <p className="text-xl text-orange-100 max-w-3xl mx-auto leading-relaxed">
+              Explore documented case studies of major forest fires, analyze
+              their causes, and learn valuable lessons to prevent future
+              disasters.
+            </p>
+          </div>
         </div>
+      </div>
 
-        <div className="mb-8 bg-orange-50 border border-orange-300 rounded-lg p-6">
-          <p className="text-gray-700">
-            <strong>Note:</strong> These case studies are based on official fire investigation reports, 
-            peer-reviewed research, and credible news sources. They demonstrate how the theoretical causes 
-            discussed on our home page manifest in real-world disasters.
-          </p>
+      {/* Stats Section */}
+      <div className="relative -mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          {stats.map((stat) => (
+            <div
+              key={stat.id}
+              className="bg-white rounded-xl shadow-lg overflow-hidden"
+            >
+              <div className="p-6">
+                <div className="flex items-center">
+                  <div className="flex-shrink-0 bg-orange-100 rounded-lg p-3">
+                    <stat.icon
+                      className="h-6 w-6 text-orange-600"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <div className="ml-5">
+                    <p className="text-sm font-medium text-gray-500 truncate">
+                      {stat.name}
+                    </p>
+                    <p className="mt-1 text-3xl font-semibold text-gray-900">
+                      {stat.value}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
+      </div>
 
-        {Object.entries(groupedEvidence).map(([causeName, cases]) => (
-          <div key={causeName} className="mb-16">
-            <h2 className="text-3xl font-bold text-gray-800 mb-6 pb-2 border-b-4 border-fire-500">
-              {causeName}
-            </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {cases.map((caseStudy) => (
-                <EvidenceCard key={caseStudy.id} caseStudy={caseStudy} />
-              ))}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* Note Box */}
+        <div className="bg-gradient-to-r from-orange-50 to-amber-50 border-l-4 border-orange-400 p-6 rounded-r-lg shadow-sm mb-12">
+          <div className="flex">
+            <div className="flex-shrink-0">
+              <FiAlertTriangle
+                className="h-5 w-5 text-orange-500"
+                aria-hidden="true"
+              />
+            </div>
+            <div className="ml-3">
+              <h3 className="text-sm font-medium text-orange-800">
+                About These Case Studies
+              </h3>
+              <div className="mt-2 text-sm text-orange-700">
+                <p>
+                  These case studies are based on official fire investigation
+                  reports, peer-reviewed research, and credible news sources.
+                  They demonstrate how theoretical causes manifest in real-world
+                  disasters and provide valuable insights for prevention and
+                  response.
+                </p>
+              </div>
             </div>
           </div>
-        ))}
+        </div>
 
-        <div className="mt-12 bg-blue-50 border border-blue-200 rounded-lg p-6">
-          <h3 className="text-xl font-bold text-blue-800 mb-3">Sources & Methodology</h3>
-          <p className="text-gray-700 mb-4">
-            All case studies on this page are compiled from official sources including:
-          </p>
-          <ul className="space-y-1 text-gray-700 ml-6 list-disc">
-            <li>Cal Fire and U.S. Forest Service investigation reports</li>
-            <li>NASA Earth Observatory and NOAA climate data</li>
-            <li>National Interagency Fire Center (NIFC) records</li>
-            <li>Peer-reviewed scientific journals</li>
-            <li>Government inquiry reports (e.g., Australian Royal Commission)</li>
-            <li>Reputable news organizations with verified facts</li>
-          </ul>
+        {/* Evidence Grid */}
+        <div className="space-y-16">
+          {Object.entries(groupedEvidence).map(([causeName, cases]) => (
+            <section
+              key={causeName}
+              className="scroll-mt-16"
+              id={causeName.toLowerCase().replace(/\s+/g, "-")}
+            >
+              <div className="flex items-center mb-8">
+                <h2 className="text-3xl font-bold text-gray-900 flex items-center">
+                  <span className="w-2 h-8 bg-orange-500 rounded-full mr-3"></span>
+                  {causeName}
+                </h2>
+                <span className="ml-4 inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-orange-100 text-orange-800">
+                  {cases.length} {cases.length === 1 ? "case" : "cases"}
+                </span>
+              </div>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {cases.map((caseStudy) => (
+                  <div key={caseStudy.id} className="animate-fade-in">
+                    <EvidenceCard caseStudy={caseStudy} />
+                  </div>
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
+
+        {/* Methodology Section */}
+        <div className="mt-20 bg-white rounded-2xl shadow-lg overflow-hidden">
+          <div className="px-6 py-12 sm:p-12 lg:px-16">
+            <div className="lg:flex lg:items-center lg:justify-between">
+              <div className="lg:w-0 lg:flex-1">
+                <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                  Our Research Methodology
+                </h2>
+                <p className="mt-4 max-w-3xl text-lg text-gray-500">
+                  We maintain the highest standards in compiling and presenting
+                  wildfire case studies.
+                </p>
+              </div>
+            </div>
+            <div className="mt-12">
+              <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="pt-6">
+                  <div className="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                    <div className="-mt-6">
+                      <div className="inline-flex items-center justify-center rounded-xl bg-orange-500 p-3 shadow-lg">
+                        <FiFileText
+                          className="h-8 w-8 text-white"
+                          aria-hidden="true"
+                        />
+                      </div>
+                      <h3 className="mt-8 text-lg font-semibold leading-8 tracking-tight text-gray-900">
+                        Primary Sources
+                      </h3>
+                      <ul className="mt-4 space-y-3 text-base text-gray-600 list-disc pl-5">
+                        <li>Cal Fire and U.S. Forest Service reports</li>
+                        <li>Government investigations</li>
+                        <li>Scientific publications</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="pt-6">
+                  <div className="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                    <div className="-mt-6">
+                      <div className="inline-flex items-center justify-center rounded-xl bg-orange-500 p-3 shadow-lg">
+                        <FiShield
+                          className="h-8 w-8 text-white"
+                          aria-hidden="true"
+                        />
+                      </div>
+                      <h3 className="mt-8 text-lg font-semibold leading-8 tracking-tight text-gray-900">
+                        Verification
+                      </h3>
+                      <ul className="mt-4 space-y-3 text-base text-gray-600 list-disc pl-5">
+                        <li>Cross-referenced data</li>
+                        <li>Peer-reviewed when possible</li>
+                        <li>Multiple source verification</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="pt-6">
+                  <div className="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                    <div className="-mt-6">
+                      <div className="inline-flex items-center justify-center rounded-xl bg-orange-500 p-3 shadow-lg">
+                        <FiGlobe
+                          className="h-8 w-8 text-white"
+                          aria-hidden="true"
+                        />
+                      </div>
+                      <h3 className="mt-8 text-lg font-semibold leading-8 tracking-tight text-gray-900">
+                        Global Perspective
+                      </h3>
+                      <ul className="mt-4 space-y-3 text-base text-gray-600 list-disc pl-5">
+                        <li>International case studies</li>
+                        <li>Diverse ecosystems</li>
+                        <li>Varied climate conditions</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
