@@ -8,7 +8,8 @@ export default function PredictionForm() {
     humidity: '',
     windSpeed: '',
     vegetation: 'moderate',
-    rainfall: ''
+    rainfall: '',
+    forestType: 'mixed'
   });
   const [prediction, setPrediction] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -61,7 +62,7 @@ export default function PredictionForm() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <div>
             <label className="block text-gray-700 font-medium mb-2">
-              Temperature (°F)
+              Temperature (°C)
             </label>
             <input
               type="number"
@@ -70,7 +71,7 @@ export default function PredictionForm() {
               onChange={handleChange}
               required
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-fire-500 focus:border-transparent"
-              placeholder="e.g., 85"
+              placeholder="e.g., 29"
             />
           </div>
 
@@ -136,6 +137,25 @@ export default function PredictionForm() {
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-fire-500 focus:border-transparent"
               placeholder="e.g., 14"
             />
+          </div>
+
+          <div>
+            <label className="block text-gray-700 font-medium mb-2">
+              Forest Type
+            </label>
+            <select
+              name="forestType"
+              value={formData.forestType}
+              onChange={handleChange}
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-fire-500 focus:border-transparent"
+            >
+              <option value="coniferous">Coniferous (Pine, Fir, Spruce)</option>
+              <option value="deciduous">Deciduous (Oak, Maple, Birch)</option>
+              <option value="mixed">Mixed Forest</option>
+              <option value="tropical">Tropical Rainforest</option>
+              <option value="grassland">Grassland/Savanna</option>
+              <option value="shrubland">Shrubland/Chaparral</option>
+            </select>
           </div>
         </div>
 

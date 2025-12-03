@@ -9,6 +9,7 @@ export default function Navbar() {
   const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'Prediction', href: '/prediction' },
+    { name: 'Critical Zones', href: '/critical-zones' },
     { name: 'Evidence', href: '/evidence' },
     { name: 'Prevention', href: '/prevention' },
   ];
