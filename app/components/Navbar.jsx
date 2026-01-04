@@ -1,17 +1,18 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useState } from 'react';
+import Link from "next/link";
+import { useState } from "react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'Prediction', href: '/prediction' },
-    { name: 'Critical Zones', href: '/critical-zones' },
-    { name: 'Evidence', href: '/evidence' },
-    { name: 'Prevention', href: '/prevention' },
+    { name: "Home", href: "/" },
+    { name: "Prediction", href: "/prediction" },
+    { name: "Rajasthan Prediction", href: "/rajasthan-prediction" },
+    { name: "Critical Zones", href: "/critical-zones" },
+    { name: "Evidence", href: "/evidence" },
+    { name: "Prevention", href: "/prevention" },
   ];
 
   return (
@@ -20,7 +21,9 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center space-x-2">
             <span className="text-3xl">🔥</span>
-            <span className="text-white font-bold text-xl">Forest Fire Prediction</span>
+            <span className="text-white font-bold text-xl">
+              Forest Fire Prediction
+            </span>
           </Link>
 
           <div className="hidden md:flex space-x-8">

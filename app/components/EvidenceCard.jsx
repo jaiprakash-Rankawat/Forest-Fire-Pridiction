@@ -66,7 +66,7 @@ export default function EvidenceCard({ caseStudy }) {
               <p className="text-white/80 text-xs font-medium">
                 ESTIMATED COST
               </p>
-              <p className="text-white font-bold text-smFatalities">
+              <p className="text-white font-bold text-sm">
                 {caseStudy.cost}
               </p>
             </div>

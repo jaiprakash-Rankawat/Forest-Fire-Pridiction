@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import { evidence } from "../data/evidence";
 import EvidenceCard from "../components/EvidenceCard";
 import {
@@ -7,13 +10,9 @@ import {
   FiGlobe,
   FiShield,
   FiTrendingUp,
+  FiChevronDown,
+  FiChevronUp,
 } from "react-icons/fi";
-
-export const metadata = {
-  title: "Case Studies & Evidence | Forest Fire Prediction",
-  description:
-    "Real-world forest fire incidents documented with detailed analysis of causes, impacts, and lessons learned.",
-};
 
 const stats = [
   { id: 1, name: "Case Studies", value: evidence.length, icon: FiFileText },
@@ -33,6 +32,8 @@ const stats = [
 ];
 
 export default function EvidencePage() {
+  const [expandedSections, setExpandedSections] = useState({});
+
   const groupedEvidence = evidence.reduce((acc, caseStudy) => {
     if (!acc[caseStudy.causeName]) {
       acc[caseStudy.causeName] = [];
@@ -45,6 +46,25 @@ export default function EvidencePage() {
   Object.keys(groupedEvidence).forEach((cause) => {
     groupedEvidence[cause].sort((a, b) => new Date(b.date) - new Date(a.date));
   });
+
+  const toggleSection = (causeName) => {
+    setExpandedSections((prev) => ({
+      ...prev,
+      [causeName]: !prev[causeName],
+    }));
+  };
+
+  const expandAll = () => {
+    const allExpanded = {};
+    Object.keys(groupedEvidence).forEach((cause) => {
+      allExpanded[cause] = true;
+    });
+    setExpandedSections(allExpanded);
+  };
+
+  const collapseAll = () => {
+    setExpandedSections({});
+  };
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -124,31 +144,79 @@ export default function EvidencePage() {
         </div>
 
         {/* Evidence Grid */}
-        <div className="space-y-16">
-          {Object.entries(groupedEvidence).map(([causeName, cases]) => (
-            <section
-              key={causeName}
-              className="scroll-mt-16"
-              id={causeName.toLowerCase().replace(/\s+/g, "-")}
+        <div className="space-y-6">
+          {/* Expand/Collapse All Controls */}
+          <div className="flex justify-end gap-3 mb-6">
+            <button
+              onClick={expandAll}
+              className="px-4 py-2 bg-orange-100 hover:bg-orange-200 text-orange-700 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2"
             >
-              <div className="flex items-center mb-8">
-                <h2 className="text-3xl font-bold text-gray-900 flex items-center">
-                  <span className="w-2 h-8 bg-orange-500 rounded-full mr-3"></span>
-                  {causeName}
-                </h2>
-                <span className="ml-4 inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-orange-100 text-orange-800">
-                  {cases.length} {cases.length === 1 ? "case" : "cases"}
-                </span>
-              </div>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                {cases.map((caseStudy) => (
-                  <div key={caseStudy.id} className="animate-fade-in">
-                    <EvidenceCard caseStudy={caseStudy} />
+              <FiChevronDown className="w-4 h-4" />
+              Expand All
+            </button>
+            <button
+              onClick={collapseAll}
+              className="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2"
+            >
+              <FiChevronUp className="w-4 h-4" />
+              Collapse All
+            </button>
+          </div>
+
+          {Object.entries(groupedEvidence).map(([causeName, cases]) => {
+            const isExpanded = expandedSections[causeName];
+            
+            return (
+              <section
+                key={causeName}
+                className="scroll-mt-16 bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 transition-all duration-300"
+                id={causeName.toLowerCase().replace(/\s+/g, "-")}
+              >
+                {/* Accordion Header */}
+                <button
+                  onClick={() => toggleSection(causeName)}
+                  className="w-full px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
+                >
+                  <div className="flex items-center gap-4">
+                    <span className="w-2 h-12 bg-orange-500 rounded-full"></span>
+                    <div className="text-left">
+                      <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+                        {causeName}
+                      </h2>
+                      <p className="text-sm text-gray-500 mt-1">
+                        {cases.length} {cases.length === 1 ? "case study" : "case studies"}
+                      </p>
+                    </div>
                   </div>
-                ))}
-              </div>
-            </section>
-          ))}
+                  <div className="flex items-center gap-3">
+                    <span className="hidden sm:inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-orange-100 text-orange-800">
+                      {cases.length} {cases.length === 1 ? "case" : "cases"}
+                    </span>
+                    <div className={`transform transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`}>
+                      <FiChevronDown className="w-6 h-6 text-gray-600" />
+                    </div>
+                  </div>
+                </button>
+
+                {/* Accordion Content */}
+                <div
+                  className={`transition-all duration-500 ease-in-out ${
+                    isExpanded ? 'max-h-[10000px] opacity-100' : 'max-h-0 opacity-0'
+                  } overflow-hidden`}
+                >
+                  <div className="px-6 pb-6 pt-2">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                      {cases.map((caseStudy) => (
+                        <div key={caseStudy.id} className="animate-fade-in">
+                          <EvidenceCard caseStudy={caseStudy} />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </section>
+            );
+          })}
         </div>
 
         {/* Methodology Section */}
