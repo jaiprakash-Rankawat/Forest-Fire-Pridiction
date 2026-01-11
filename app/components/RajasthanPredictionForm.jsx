@@ -5,6 +5,7 @@ import ForestSelector from './ForestSelector';
 const RajasthanPredictionForm = ({ onForestSelect, onPredictionResult }) => {
   const [selectedForest, setSelectedForest] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [isWeatherLoading, setIsWeatherLoading] = useState(false);
   const [formData, setFormData] = useState({
     temperature: '',
     humidity: '',
@@ -14,19 +15,60 @@ const RajasthanPredictionForm = ({ onForestSelect, onPredictionResult }) => {
     daysSinceRain: '10'
   });
 
+  // Fetch live weather data from Open-Meteo
+  const fetchLiveWeather = async (lat, lng) => {
+    try {
+      const response = await fetch(
+        `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&current=temperature_2m,relative_humidity_2m,rain,wind_speed_10m`
+      );
+      const data = await response.json();
+      
+      if (data.current) {
+        return {
+          temperature: data.current.temperature_2m,
+          humidity: data.current.relative_humidity_2m,
+          windSpeed: data.current.wind_speed_10m,
+          rainfall: data.current.rain,
+        };
+      }
+      return null;
+    } catch (error) {
+      console.error("Failed to fetch weather:", error);
+      return null;
+    }
+  };
+
   // Update parent when forest selection changes
-  const handleForestSelect = (forest) => {
+  const handleForestSelect = async (forest) => {
     setSelectedForest(forest);
     onForestSelect(forest);
     
-    // Pre-fill form with typical values if forest is selected
     if (forest) {
-      setFormData(prev => ({
-        ...prev,
-        temperature: forest.climate.avgTemp.toString(),
-        humidity: '30', // Default dry season humidity
-        windSpeed: '12', 
-      }));
+      setIsWeatherLoading(true);
+      // Show loading state/placeholder if you want, or just auto-fill
+      // Use live data if available, else fallback to forest defaults
+      const liveWeather = await fetchLiveWeather(forest.coordinates.lat, forest.coordinates.lng);
+      
+      if (liveWeather) {
+        setFormData(prev => ({
+          ...prev,
+          temperature: liveWeather.temperature.toString(),
+          humidity: liveWeather.humidity.toString(),
+          windSpeed: liveWeather.windSpeed.toString(),
+          rainfall: liveWeather.rainfall.toString(),
+          // Simple logic: if raining now, days since rain is 0, else keep default
+          daysSinceRain: liveWeather.rainfall > 0 ? '0' : '10' 
+        }));
+      } else {
+        // Fallback to static data
+        setFormData(prev => ({
+          ...prev,
+          temperature: forest.climate.avgTemp.toString(),
+          humidity: '30', 
+          windSpeed: '12', 
+        }));
+      }
+      setIsWeatherLoading(false);
     }
   };
 
@@ -68,12 +110,26 @@ const RajasthanPredictionForm = ({ onForestSelect, onPredictionResult }) => {
   };
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4 sm:space-y-6">
       <ForestSelector selectedForest={selectedForest} onSelect={handleForestSelect} />
 
       {selectedForest && (
-        <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-md p-6">
-          <h3 className="text-lg font-semibold text-gray-800 mb-4">Environmental Parameters</h3>
+        <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-md p-4 sm:p-6 relative">
+          
+          {isWeatherLoading && (
+            <div className="absolute inset-0 bg-white/70 flex items-center justify-center z-10 rounded-lg backdrop-blur-[1px]">
+               <div className="text-orange-600 font-semibold flex items-center animate-pulse text-sm sm:text-base">
+                  Fetching live weather...
+               </div>
+            </div>
+          )}
+
+          <h3 className="text-base sm:text-lg font-semibold text-gray-800 mb-3 sm:mb-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+            <span>Environmental Parameters</span>
+            <span className="text-xs font-normal text-blue-600 bg-blue-50 px-2 py-1 rounded border border-blue-100 self-start sm:self-auto">
+               Live Data Integrated
+            </span>
+          </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
             <div>
@@ -153,7 +209,7 @@ const RajasthanPredictionForm = ({ onForestSelect, onPredictionResult }) => {
 
           <button
             type="submit"
-            disabled={loading}
+            disabled={loading || isWeatherLoading}
             className="w-full bg-gradient-to-r from-orange-600 to-red-600 text-white font-bold py-3 px-6 rounded-lg hover:from-orange-700 hover:to-red-700 transition-all duration-200 disabled:opacity-50 flex justify-center items-center"
           >
             {loading ? (

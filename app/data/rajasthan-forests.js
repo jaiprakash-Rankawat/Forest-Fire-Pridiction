@@ -9,8 +9,9 @@ export const rajasthanForests = [
     description: "The oldest mountain range in the world, extending from Sirohi to Alwar. Serves as a major forest belt for Rajasthan.",
     wildlife: ["Leopard", "Striped Hyena", "Golden Jackal", "Sambar", "Wild Boar"],
     boundary: [
-      [24.5, 72.5], [25.0, 73.5], [26.5, 75.0], [27.5, 76.5], [28.0, 77.0], 
-      [27.8, 76.0], [26.0, 74.0], [24.8, 73.0], [24.5, 72.5]
+      [24.5, 72.5], [24.7, 73.0], [25.2, 73.8], [26.0, 74.6], [26.8, 75.3], 
+      [27.6, 76.2], [28.0, 77.0], [27.7, 76.3], [27.0, 75.5], [26.2, 74.2], 
+      [25.4, 73.5], [24.8, 72.9], [24.5, 72.5]
     ],
     zones: [
       { id: "northern_aravalli", name: "Northern Aravalli", riskMultiplier: 1.2, coordinates: [27.5, 76.5], radius: 10000 },
@@ -29,7 +30,8 @@ export const rajasthanForests = [
     description: "One of the densest forest regions, including Kumbhalgarh, Jaisamand, and Phulwari ki Nal.",
     wildlife: ["Leopard", "Sloth Bear", "Chinkara", "Four-horned Antelope"],
     boundary: [
-      [24.0, 73.0], [25.0, 73.0], [25.0, 74.5], [24.0, 74.5], [24.0, 73.0]
+      [24.0, 73.0], [24.3, 73.1], [24.8, 73.2], [25.0, 73.5], [25.1, 74.0], 
+      [25.0, 74.5], [24.5, 74.4], [24.1, 74.0], [24.0, 73.4], [24.0, 73.0]
     ],
     zones: [
       { id: "jaisamand", name: "Jaisamand Sanctuary", riskMultiplier: 1.1, coordinates: [24.23, 73.95], radius: 5000 },
@@ -48,7 +50,8 @@ export const rajasthanForests = [
     description: "Home to Mount Abu's unique subtropical forests, rich in biodiversity and tribal areas.",
     wildlife: ["Sloth Bear", "Leopard", "Sambar", "Jungle Cat"],
     boundary: [
-       [24.5, 72.5], [25.0, 72.5], [25.0, 73.2], [24.5, 73.2], [24.5, 72.5]
+       [24.5, 72.5], [24.8, 72.6], [25.0, 72.8], [25.1, 73.0], [25.0, 73.2], 
+       [24.7, 73.1], [24.5, 72.9], [24.5, 72.5]
     ],
     zones: [
       { id: "mt_abu", name: "Mount Abu Sanctuary", riskMultiplier: 0.8, coordinates: [24.60, 72.70], radius: 5000 },
@@ -67,7 +70,8 @@ export const rajasthanForests = [
     description: "Central Aravalli region, including the famous Kumbhalgarh surroundings.",
     wildlife: ["Wolf", "Leopard", "Sloth Bear", "Golden Jackal"],
     boundary: [
-      [24.8, 73.5], [25.5, 73.5], [25.5, 74.2], [24.8, 74.2], [24.8, 73.5]
+      [24.8, 73.5], [25.0, 73.6], [25.3, 73.7], [25.5, 73.9], [25.5, 74.2], 
+      [25.2, 74.1], [24.9, 74.0], [24.8, 73.8], [24.8, 73.5]
     ],
     zones: [
       { id: "kumbhalgarh_core", name: "Kumbhalgarh Core", riskMultiplier: 1.0, coordinates: [25.15, 73.58], radius: 6000 },
@@ -86,7 +90,8 @@ export const rajasthanForests = [
     description: "Located in SE Rajasthan, holding the highest forest cover percentage among districts. Incl. Shahbad forests.",
     wildlife: ["Leopard", "Deer", "Wild Boar", "Blue Bull"],
     boundary: [
-      [24.7, 76.2], [25.4, 76.2], [25.4, 77.0], [24.7, 77.0], [24.7, 76.2]
+      [24.7, 76.2], [25.0, 76.3], [25.4, 76.4], [25.4, 76.7], [25.3, 77.0], 
+      [25.0, 76.9], [24.7, 76.6], [24.7, 76.2]
     ],
     zones: [
       { id: "shahbad", name: "Shahbad Forest", riskMultiplier: 1.4, coordinates: [25.20, 76.80], radius: 8000 },
@@ -105,7 +110,8 @@ export const rajasthanForests = [
     description: "Includes Mukundra Hills Tiger Reserve. Dense dry deciduous forests along Chambal.",
     wildlife: ["Tiger", "Leopard", "Sloth Bear", "Chambal Ghariyal"],
     boundary: [
-      [24.6, 75.5], [25.5, 75.5], [25.5, 76.5], [24.6, 76.5], [24.6, 75.5]
+      [24.6, 75.5], [25.0, 75.6], [25.5, 75.8], [25.5, 76.2], [25.4, 76.5], 
+      [25.0, 76.4], [24.6, 76.2], [24.6, 75.5]
     ],
     zones: [
       { id: "mukundra_core", name: "Mukundra Core", riskMultiplier: 1.3, coordinates: [24.87, 75.98], radius: 6000 },
@@ -124,7 +130,8 @@ export const rajasthanForests = [
     description: "Southernmost part of Rajasthan. High rainfall leads to good forest density with Teak dominance.",
     wildlife: ["Leopard", "Chinkara", "Monitor Lizard", "Grey Hornbill"],
     boundary: [
-      [23.1, 74.0], [23.9, 74.0], [23.9, 74.8], [23.1, 74.8], [23.1, 74.0]
+      [23.1, 74.0], [23.5, 74.1], [23.9, 74.2], [23.9, 74.5], [23.8, 74.8], 
+      [23.4, 74.7], [23.1, 74.4], [23.1, 74.0]
     ],
     zones: [
       { id: "main_banswara", name: "Main Forest Block", riskMultiplier: 1.1, coordinates: [23.50, 74.40], radius: 7000 }
@@ -142,7 +149,8 @@ export const rajasthanForests = [
     description: "Tribal-dominated forest landscape rich in Teak and Bamboo.",
     wildlife: ["Mongoose", "Jackal", "Hyena", "Reptiles"],
     boundary: [
-      [23.5, 73.4], [24.1, 73.4], [24.1, 74.2], [23.5, 74.2], [23.5, 73.4]
+      [23.5, 73.4], [23.8, 73.5], [24.1, 73.6], [24.1, 73.9], [24.0, 74.2], 
+      [23.7, 74.1], [23.5, 73.8], [23.5, 73.4]
     ],
     zones: [
       { id: "teak_belt", name: "Teak Plantation Area", riskMultiplier: 1.4, coordinates: [23.80, 73.80], radius: 5000 }
@@ -160,7 +168,8 @@ export const rajasthanForests = [
     description: "Famous for Ranthambore National Park. A key habitat for Bengal Tigers.",
     wildlife: ["Bengal Tiger", "Nilgai", "Caracal", "Blackbuck"],
     boundary: [
-      [25.8, 76.2], [26.3, 76.2], [26.3, 76.8], [25.8, 76.8], [25.8, 76.2]
+      [25.8, 76.2], [26.0, 76.3], [26.3, 76.4], [26.3, 76.6], [26.2, 76.8], 
+      [25.9, 76.7], [25.8, 76.5], [25.8, 76.2]
     ],
     zones: [
       { id: "ranthambore_core", name: "Ranthambore Core", riskMultiplier: 1.5, coordinates: [26.01, 76.50], radius: 6000 },
@@ -179,7 +188,8 @@ export const rajasthanForests = [
     description: "Northern Aravalli forests, including the Sariska Tiger Reserve.",
     wildlife: ["Tiger", "Sambar", "Nilgai", "Golden Jackal"],
     boundary: [
-      [27.0, 76.0], [28.0, 76.0], [28.0, 77.0], [27.0, 77.0], [27.0, 76.0]
+      [27.0, 76.0], [27.5, 76.1], [28.0, 76.3], [28.0, 76.7], [27.8, 77.0], 
+      [27.3, 76.9], [27.0, 76.5], [27.0, 76.0]
     ],
     zones: [
       { id: "sariska_core", name: "Sariska Core", riskMultiplier: 1.4, coordinates: [27.32, 76.43], radius: 6000 },
@@ -198,7 +208,8 @@ export const rajasthanForests = [
     description: "Southeastern Rajasthan, known as the greenest district after Baran. Undulating terrain.",
     wildlife: ["Leopard", "Wild Boar", "Blue Bull"],
     boundary: [
-      [24.0, 75.8], [25.0, 75.8], [25.0, 76.8], [24.0, 76.8], [24.0, 75.8]
+      [24.0, 75.8], [24.5, 75.9], [25.0, 76.0], [25.0, 76.5], [24.8, 76.8], 
+      [24.3, 76.7], [24.0, 76.3], [24.0, 75.8]
     ],
     zones: [
       { id: "gagron", name: "Gagron Fort Area", riskMultiplier: 0.8, coordinates: [24.62, 76.18], radius: 3000 }
@@ -216,7 +227,8 @@ export const rajasthanForests = [
     description: "Mixed dry deciduous forests surrounding the historic Chittorgarh fort area.",
     wildlife: ["Leopard", "Fox", "Chinkara"],
     boundary: [
-      [24.4, 74.2], [25.1, 74.2], [25.1, 75.0], [24.4, 75.0], [24.4, 74.2]
+      [24.4, 74.2], [24.7, 74.3], [25.1, 74.4], [25.1, 74.7], [25.0, 75.0], 
+      [24.6, 74.9], [24.4, 74.6], [24.4, 74.2]
     ],
     zones: [
       { id: "chittor_fort", name: "Fort Forest", riskMultiplier: 0.7, coordinates: [24.88, 74.63], radius: 2000 },
@@ -235,7 +247,8 @@ export const rajasthanForests = [
     description: "Hilly and forested terrain. Home to Sita Mata Sanctuary.",
     wildlife: ["Flying Squirrel", "Leopard", "Four-horned Antelope"],
     boundary: [
-      [23.7, 74.4], [24.4, 74.4], [24.4, 75.0], [23.7, 75.0], [23.7, 74.4]
+      [23.7, 74.4], [24.0, 74.5], [24.4, 74.6], [24.4, 74.8], [24.3, 75.0], 
+      [23.9, 74.9], [23.7, 74.7], [23.7, 74.4]
     ],
     zones: [
       { id: "sita_mata", name: "Sita Mata Sanctuary", riskMultiplier: 1.5, coordinates: [24.18, 74.55], radius: 6000 }
@@ -253,7 +266,8 @@ export const rajasthanForests = [
     description: "Rocky forests serving as wildlife corridors between Ranthambore and Mukundra.",
     wildlife: ["Leopard", "Sloth Bear", "Wolf"],
     boundary: [
-      [25.2, 75.3], [25.8, 75.3], [25.8, 76.2], [25.2, 76.2], [25.2, 75.3]
+      [25.2, 75.3], [25.5, 75.4], [25.8, 75.5], [25.8, 75.9], [25.7, 76.2], 
+      [25.4, 76.1], [25.2, 75.8], [25.2, 75.3]
     ],
     zones: [
       { id: "ramgarh_vishdhari", name: "Ramgarh Vishdhari", riskMultiplier: 1.4, coordinates: [25.40, 75.60], radius: 7000 }
@@ -271,7 +285,8 @@ export const rajasthanForests = [
     description: "Scattered dry forests along the Banas river basin.",
     wildlife: ["Blue Bull", "Jackal", "Fox"],
     boundary: [
-      [25.8, 75.4], [26.5, 75.4], [26.5, 76.5], [25.8, 76.5], [25.8, 75.4]
+      [25.8, 75.4], [26.1, 75.5], [26.5, 75.6], [26.5, 76.1], [26.4, 76.5], 
+      [26.0, 76.4], [25.8, 76.0], [25.8, 75.4]
     ],
     zones: [
       { id: "banas_bed", name: "Banas River Bed", riskMultiplier: 0.6, coordinates: [26.10, 75.90], radius: 4000 }
@@ -289,7 +304,8 @@ export const rajasthanForests = [
     description: "Central Rajasthan Aravalli forests. Includes Todgarh Raoli.",
     wildlife: ["Leopard", "Sloth Bear", "Civet"],
     boundary: [
-      [26.0, 74.0], [26.8, 74.0], [26.8, 75.0], [26.0, 75.0], [26.0, 74.0]
+      [26.0, 74.0], [26.3, 74.1], [26.8, 74.2], [26.8, 74.6], [26.7, 75.0], 
+      [26.3, 74.9], [26.0, 74.5], [26.0, 74.0]
     ],
     zones: [
       { id: "todgarh", name: "Todgarh Raoli", riskMultiplier: 1.2, coordinates: [25.80, 74.00], radius: 6000 },
@@ -308,7 +324,8 @@ export const rajasthanForests = [
     description: "Western Aravalli foothills forests, transition towards desert.",
     wildlife: ["Leopard", "Hyena", "Wolf"],
     boundary: [
-      [25.0, 72.8], [26.2, 72.8], [26.2, 73.8], [25.0, 73.8], [25.0, 72.8]
+      [25.0, 72.8], [25.6, 72.9], [26.2, 73.0], [26.2, 73.5], [26.1, 73.8], 
+      [25.5, 73.7], [25.0, 73.3], [25.0, 72.8]
     ],
     zones: [
       { id: "jawai", name: "Jawai Leopard Conservation", riskMultiplier: 0.9, coordinates: [25.10, 73.15], radius: 4000 }
@@ -326,7 +343,8 @@ export const rajasthanForests = [
     description: "Northern Aravalli remnants, patchy forest cover.",
     wildlife: ["Nilgai", "Fox", "Hare"],
     boundary: [
-      [27.2, 74.8], [28.0, 74.8], [28.0, 75.5], [27.2, 75.5], [27.2, 74.8]
+      [27.2, 74.8], [27.6, 74.9], [28.0, 75.0], [28.0, 75.3], [27.8, 75.5], 
+      [27.4, 75.4], [27.2, 75.1], [27.2, 74.8]
     ],
     zones: [
       { id: "harshnath", name: "Harshnath Hills", riskMultiplier: 1.1, coordinates: [27.50, 75.15], radius: 3000 }
@@ -344,7 +362,8 @@ export const rajasthanForests = [
     description: "Sparse but ecologically important forest pockets in semi-arid region.",
     wildlife: ["Blackbuck", "Chinkara", "Desert Cat"],
     boundary: [
-      [27.8, 75.0], [28.4, 75.0], [28.4, 76.0], [27.8, 76.0], [27.8, 75.0]
+      [27.8, 75.0], [28.1, 75.1], [28.4, 75.3], [28.4, 75.7], [28.3, 76.0], 
+      [28.0, 75.9], [27.8, 75.5], [27.8, 75.0]
     ],
     zones: [
       { id: "khetri", name: "Khetri Bansyal", riskMultiplier: 1.0, coordinates: [28.00, 75.80], radius: 4000 }
@@ -362,7 +381,8 @@ export const rajasthanForests = [
     description: "Very sparse vegetation, mostly thorny forests suited for arid climate.",
     wildlife: ["Chinkara", "Blackbuck", "Fox"],
     boundary: [
-      [26.5, 73.0], [27.5, 73.0], [27.5, 74.5], [26.5, 74.5], [26.5, 73.0]
+      [26.5, 73.0], [27.0, 73.1], [27.5, 73.3], [27.5, 74.0], [27.4, 74.5], 
+      [27.0, 74.4], [26.5, 74.0], [26.5, 73.0]
     ],
     zones: [
       { id: "rotu", name: "Rotu Conservation", riskMultiplier: 0.6, coordinates: [27.15, 74.05], radius: 2000 }
