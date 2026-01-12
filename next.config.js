@@ -14,6 +14,7 @@ const nextConfig = {
     ],
     unoptimized: true,
   },
+  turbopack: {},
   serverExternalPackages: ["leaflet"],
   webpack: (config) => {
     // This is needed for Leaflet to work properly with Next.js
