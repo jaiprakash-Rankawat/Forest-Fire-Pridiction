@@ -1,0 +1,111 @@
+[
+  { "id": "rj-1", "name": "Sariska Tiger Reserve", "state": "Rajasthan", "lat": 27.3284, "lon": 76.4225, "area": 1213, "type": "Tiger Reserve", "description": "Sariska is the first reserve in the world to successfully relocate tigers." },
+  { "id": "rj-2", "name": "Ranthambore National Park", "state": "Rajasthan", "lat": 26.0173, "lon": 76.5026, "area": 1334, "type": "National Park", "description": "Famous for Bengal tigers and ancient ruins within the forest." },
+  { "id": "rj-3", "name": "Keoladeo Ghana National Park", "state": "Rajasthan", "lat": 27.1581, "lon": 77.5258, "area": 29, "type": "National Park", "description": "UNESCO World Heritage Site and renowned bird sanctuary." },
+  { "id": "rj-4", "name": "Desert National Park", "state": "Rajasthan", "lat": 27.0000, "lon": 70.7500, "area": 3162, "type": "National Park", "description": "One of the largest national parks in India covering the Thar Desert ecosystem." },
+  { "id": "rj-5", "name": "Mukundra Hills Tiger Reserve", "state": "Rajasthan", "lat": 24.7000, "lon": 75.9800, "area": 759, "type": "Tiger Reserve", "description": "Known for leopards, sloth bears and diverse avifauna." },
+  { "id": "rj-6", "name": "Kumbhalgarh Wildlife Sanctuary", "state": "Rajasthan", "lat": 25.1481, "lon": 73.5786, "area": 610, "type": "Wildlife Sanctuary", "description": "Home to highly endangered Indian wolf and leopards." },
+  { "id": "rj-7", "name": "Mount Abu Wildlife Sanctuary", "state": "Rajasthan", "lat": 24.5926, "lon": 72.7156, "area": 288, "type": "Wildlife Sanctuary", "description": "Located in the Aravalli Range, rich in floral diversity." },
+
+  { "id": "mp-1", "name": "Kanha Tiger Reserve", "state": "Madhya Pradesh", "lat": 22.3369, "lon": 80.6117, "area": 1945, "type": "Tiger Reserve", "description": "Inspiration for Rudyard Kipling's The Jungle Book. Famous for Barasingha deer." },
+  { "id": "mp-2", "name": "Bandhavgarh National Park", "state": "Madhya Pradesh", "lat": 23.7089, "lon": 80.9483, "area": 1161, "type": "National Park", "description": "Highest density of tiger population in India." },
+  { "id": "mp-3", "name": "Pench National Park", "state": "Madhya Pradesh", "lat": 21.7589, "lon": 79.3034, "area": 758, "type": "National Park", "description": "Straddling Madhya Pradesh and Maharashtra, rich in teak forests." },
+  { "id": "mp-4", "name": "Satpura National Park", "state": "Madhya Pradesh", "lat": 22.5124, "lon": 77.9877, "area": 524, "type": "National Park", "description": "Remote and rugged terrain with excellent biodiversity." },
+  { "id": "mp-5", "name": "Panna Tiger Reserve", "state": "Madhya Pradesh", "lat": 24.7236, "lon": 80.1839, "area": 576, "type": "Tiger Reserve", "description": "Along the Ken River, known for its successful tiger reintroduction." },
+  { "id": "mp-6", "name": "Sanjay-Dubri Tiger Reserve", "state": "Madhya Pradesh", "lat": 23.8681, "lon": 81.7594, "area": 1674, "type": "Tiger Reserve", "description": "Large forest traversing MP and Chhattisgarh borders." },
+  { "id": "mp-7", "name": "Kuno National Park", "state": "Madhya Pradesh", "lat": 25.4859, "lon": 77.1009, "area": 748, "type": "National Park", "description": "Site for the reintroduction of cheetahs in India." },
+  { "id": "mp-8", "name": "Pachmarhi Biosphere Reserve", "state": "Madhya Pradesh", "lat": 22.4667, "lon": 78.3333, "area": 4926, "type": "Biosphere Reserve", "description": "Includes Bori Sanctuary, Satpura National Park and Pachmarhi Sanctuary." },
+
+  { "id": "uk-1", "name": "Jim Corbett National Park", "state": "Uttarakhand", "lat": 29.5300, "lon": 78.7747, "area": 1318, "type": "National Park", "description": "India's oldest national park. Established in 1936 to protect Bengal tigers." },
+  { "id": "uk-2", "name": "Rajaji National Park", "state": "Uttarakhand", "lat": 29.9167, "lon": 78.2833, "area": 820, "type": "National Park", "description": "Home to large herds of Asian elephants and tigers." },
+  { "id": "uk-3", "name": "Valley of Flowers National Park", "state": "Uttarakhand", "lat": 30.7280, "lon": 79.6050, "area": 87, "type": "National Park", "description": "UNESCO World Heritage Site famous for endemic alpine flowers." },
+  { "id": "uk-4", "name": "Nanda Devi Biosphere Reserve", "state": "Uttarakhand", "lat": 30.3167, "lon": 79.8000, "area": 5860, "type": "Biosphere Reserve", "description": "High-altitude reserve protecting glaciated basin and Himalayan flora." },
+  { "id": "uk-5", "name": "Gangotri National Park", "state": "Uttarakhand", "lat": 31.0000, "lon": 79.0333, "area": 2390, "type": "National Park", "description": "High altitude park, origin of the holy river Ganga." },
+  { "id": "uk-6", "name": "Govind Pashu Vihar National Park", "state": "Uttarakhand", "lat": 31.1000, "lon": 78.3000, "area": 472, "type": "National Park", "description": "Created to protect the endangered snow leopard." },
+
+  { "id": "kl-1", "name": "Periyar Tiger Reserve", "state": "Kerala", "lat": 9.4583, "lon": 77.1416, "area": 925, "type": "Tiger Reserve", "description": "Built around Periyar Lake, best known for wild elephant herds." },
+  { "id": "kl-2", "name": "Silent Valley National Park", "state": "Kerala", "lat": 11.0774, "lon": 76.4454, "area": 90, "type": "National Park", "description": "One of the last undisturbed tropical rainforests of the Western Ghats." },
+  { "id": "kl-3", "name": "Wayanad Wildlife Sanctuary", "state": "Kerala", "lat": 11.6853, "lon": 76.1318, "area": 344, "type": "Wildlife Sanctuary", "description": "Contiguous with Nagarhole and Bandipur, supports a large biodiversity." },
+  { "id": "kl-4", "name": "Parambikulam Tiger Reserve", "state": "Kerala", "lat": 10.3591, "lon": 76.7440, "area": 643, "type": "Tiger Reserve", "description": "Protected watershed with subtropical moist broadleaf forests." },
+  { "id": "kl-5", "name": "Eravikulam National Park", "state": "Kerala", "lat": 10.2000, "lon": 77.0833, "area": 97, "type": "National Park", "description": "Famous for the endangered Nilgiri Tahr and Neelakurinji flowers." },
+  { "id": "kl-6", "name": "Agasthyamalai Biosphere Reserve", "state": "Kerala/Tamil Nadu", "lat": 8.6333, "lon": 77.2500, "area": 3500, "type": "Biosphere Reserve", "description": "Straddles Kerala and Tamil Nadu, high endemism." },
+
+  { "id": "ka-1", "name": "Nagarhole National Park", "state": "Karnataka", "lat": 12.0500, "lon": 76.1500, "area": 848, "type": "National Park", "description": "Part of Nilgiri Biosphere Reserve. Excellent elephant and tiger habitat." },
+  { "id": "ka-2", "name": "Bandipur National Park", "state": "Karnataka", "lat": 11.6703, "lon": 76.6296, "area": 874, "type": "National Park", "description": "Adjoins Mudumalai and Wayanad, forming a massive wildlife corridor." },
+  { "id": "ka-3", "name": "Bhadra Wildlife Sanctuary", "state": "Karnataka", "lat": 13.5167, "lon": 75.7500, "area": 493, "type": "Tiger Reserve", "description": "Rich shola forests and grasslands in the Western Ghats." },
+  { "id": "ka-4", "name": "Dandeli-Anshi Tiger Reserve", "state": "Karnataka", "lat": 15.2638, "lon": 74.4302, "area": 1097, "type": "Tiger Reserve", "description": "Moist deciduous forests along the Kali River." },
+  { "id": "ka-5", "name": "Bannerghatta National Park", "state": "Karnataka", "lat": 12.8000, "lon": 77.5833, "area": 260, "type": "National Park", "description": "Located near Bangalore, famous for its lion and tiger safaris." },
+
+  { "id": "tn-1", "name": "Mudumalai National Park", "state": "Tamil Nadu", "lat": 11.5738, "lon": 76.6141, "area": 321, "type": "National Park", "description": "At the junction of Tamil Nadu, Karnataka, and Kerala — rich wildlife corridors." },
+  { "id": "tn-2", "name": "Anamalai Tiger Reserve", "state": "Tamil Nadu", "lat": 10.3692, "lon": 77.0524, "area": 1480, "type": "Tiger Reserve", "description": "Also known as Indira Gandhi Wildlife Sanctuary, a biodiversity hotspot." },
+  { "id": "tn-3", "name": "Sathyamangalam Tiger Reserve", "state": "Tamil Nadu", "lat": 11.6667, "lon": 77.3833, "area": 1412, "type": "Tiger Reserve", "description": "Important wildlife corridor linking Nilgiris and Eastern Ghats." },
+  { "id": "tn-4", "name": "Gulf of Mannar Marine Biosphere Reserve", "state": "Tamil Nadu", "lat": 9.0000, "lon": 79.0000, "area": 10500, "type": "Biosphere Reserve", "description": "First marine biosphere reserve in India, rich in coral reefs and dugongs." },
+  { "id": "tn-5", "name": "Nilgiri Biosphere Reserve", "state": "Tamil Nadu/Kerala/Karnataka", "lat": 11.3833, "lon": 76.6500, "area": 5520, "type": "Biosphere Reserve", "description": "First biosphere reserve in India, encompassing several national parks." },
+
+  { "id": "as-1", "name": "Kaziranga National Park", "state": "Assam", "lat": 26.5775, "lon": 93.1711, "area": 858, "type": "National Park", "description": "UNESCO World Heritage Site with two-thirds of world's Indian one-horned rhinoceros." },
+  { "id": "as-2", "name": "Manas National Park", "state": "Assam", "lat": 26.6988, "lon": 91.0013, "area": 950, "type": "National Park", "description": "UNESCO World Heritage Site and Project Tiger reserve in Bhutan foothills." },
+  { "id": "as-3", "name": "Dibru-Saikhowa National Park", "state": "Assam", "lat": 27.7167, "lon": 95.2500, "area": 340, "type": "National Park", "description": "Habitat of feral horses and Gangetic river dolphins." },
+  { "id": "as-4", "name": "Orang National Park", "state": "Assam", "lat": 26.5417, "lon": 92.2667, "area": 78, "type": "National Park", "description": "Often called mini-Kaziranga, known for great Indian one-horned rhino." },
+  { "id": "as-5", "name": "Nameri National Park", "state": "Assam", "lat": 26.9333, "lon": 92.8333, "area": 200, "type": "National Park", "description": "Excellent spot for bird watching, including white-winged wood duck." },
+
+  { "id": "ar-1", "name": "Namdapha National Park", "state": "Arunachal Pradesh", "lat": 27.5000, "lon": 96.4167, "area": 1985, "type": "National Park", "description": "Only park in world with all four Panthera species: tiger, leopard, snow leopard, clouded leopard." },
+  { "id": "ar-2", "name": "Mouling National Park", "state": "Arunachal Pradesh", "lat": 28.5333, "lon": 94.9000, "area": 483, "type": "National Park", "description": "Lesser known, remote wilderness area in upper Siang district." },
+  { "id": "ar-3", "name": "Pakke Tiger Reserve", "state": "Arunachal Pradesh", "lat": 27.0000, "lon": 92.9000, "area": 862, "type": "Tiger Reserve", "description": "Notable for its hornbills and efforts in wildlife conservation." },
+  { "id": "ar-4", "name": "Dihang-Dibang Biosphere Reserve", "state": "Arunachal Pradesh", "lat": 28.5000, "lon": 95.5000, "area": 5111, "type": "Biosphere Reserve", "description": "Rich in rare mammals including Mishmi takin, red goral." },
+
+  { "id": "ap-1", "name": "Nagarjunasagar-Srisailam Tiger Reserve", "state": "Telangana/Andhra Pradesh", "lat": 16.5333, "lon": 78.8333, "area": 3568, "type": "Tiger Reserve", "description": "Largest tiger reserve in India by area." },
+  { "id": "ap-2", "name": "Papikonda National Park", "state": "Andhra Pradesh", "lat": 17.4500, "lon": 81.3167, "area": 1012, "type": "National Park", "description": "Scenic national park with the Godavari river flowing through it." },
+  { "id": "ap-3", "name": "Sri Venkateswara National Park", "state": "Andhra Pradesh", "lat": 13.6833, "lon": 79.2500, "area": 353, "type": "National Park", "description": "Located in Eastern Ghats, famous for slender loris and rare flora." },
+
+  { "id": "mh-1", "name": "Tadoba Andhari Tiger Reserve", "state": "Maharashtra", "lat": 20.1333, "lon": 79.3333, "area": 1727, "type": "Tiger Reserve", "description": "The 'Jewel of Vidarbha', well known for easy tiger sightings." },
+  { "id": "mh-2", "name": "Melghat Tiger Reserve", "state": "Maharashtra", "lat": 21.4167, "lon": 77.1667, "area": 2768, "type": "Tiger Reserve", "description": "First designated tiger reserve of Maharashtra." },
+  { "id": "mh-3", "name": "Sanjay Gandhi National Park", "state": "Maharashtra", "lat": 19.2167, "lon": 72.9167, "area": 104, "type": "National Park", "description": "One of the most visited national parks in Asia, within Mumbai." },
+  { "id": "mh-4", "name": "Navegaon National Park", "state": "Maharashtra", "lat": 20.9333, "lon": 80.1667, "area": 133, "type": "National Park", "description": "Rich mixed dry deciduous forests with beautiful lake." },
+  { "id": "mh-5", "name": "Bhimashankar Wildlife Sanctuary", "state": "Maharashtra", "lat": 19.1333, "lon": 73.5333, "area": 131, "type": "Wildlife Sanctuary", "description": "Home to the rare Indian Giant Squirrel." },
+
+  { "id": "od-1", "name": "Simlipal National Park", "state": "Odisha", "lat": 21.8333, "lon": 86.3333, "area": 2750, "type": "Tiger Reserve", "description": "Famous for black tigers. A beautiful biosphere reserve with magnificent waterfalls." },
+  { "id": "od-2", "name": "Bhitarkanika National Park", "state": "Odisha", "lat": 20.7333, "lon": 86.8667, "area": 145, "type": "National Park", "description": "Second largest mangrove ecosystem in India, famous for saltwater crocodiles." },
+  { "id": "od-3", "name": "Satkosia Tiger Reserve", "state": "Odisha", "lat": 20.5833, "lon": 84.8000, "area": 988, "type": "Tiger Reserve", "description": "Comprises the magnificent Satkosia gorge along the Mahanadi river." },
+  { "id": "od-4", "name": "Nandankanan Zoological Park", "state": "Odisha", "lat": 20.3958, "lon": 85.8175, "area": 4, "type": "Wildlife Sanctuary", "description": "First zoo in the world to successfully breed Melanistic and White Tigers." },
+
+  { "id": "jh-1", "name": "Palamu Tiger Reserve", "state": "Jharkhand", "lat": 23.9167, "lon": 84.0833, "area": 1129, "type": "Tiger Reserve", "description": "One of the original Project Tiger reserves." },
+  { "id": "jh-2", "name": "Dalma Wildlife Sanctuary", "state": "Jharkhand", "lat": 22.8833, "lon": 86.2167, "area": 195, "type": "Wildlife Sanctuary", "description": "Famous for its significant elephant population." },
+
+  { "id": "wb-1", "name": "Sundarbans National Park", "state": "West Bengal", "lat": 21.9497, "lon": 88.8767, "area": 1330, "type": "National Park", "description": "UNESCO World Heritage Site with the largest mangrove forest and Royal Bengal Tiger." },
+  { "id": "wb-2", "name": "Buxa Tiger Reserve", "state": "West Bengal", "lat": 26.7000, "lon": 89.5833, "area": 760, "type": "Tiger Reserve", "description": "Located in the Dooars region of northern part of the state." },
+  { "id": "wb-3", "name": "Neora Valley National Park", "state": "West Bengal", "lat": 27.0667, "lon": 88.7000, "area": 88, "type": "National Park", "description": "One of the richest biological zones in the entire Northeast." },
+  { "id": "wb-4", "name": "Jaldapara National Park", "state": "West Bengal", "lat": 26.6833, "lon": 89.2833, "area": 216, "type": "National Park", "description": "Famous for the Indian one-horned rhinoceros." },
+
+  { "id": "hp-1", "name": "Great Himalayan National Park", "state": "Himachal Pradesh", "lat": 31.7617, "lon": 77.5444, "area": 905, "type": "National Park", "description": "UNESCO World Heritage Site with snow leopards, western tragopan, and Himalayan brown bear." },
+  { "id": "hp-2", "name": "Pin Valley National Park", "state": "Himachal Pradesh", "lat": 31.9500, "lon": 77.8500, "area": 675, "type": "National Park", "description": "Cold desert national park in Spiti Valley." },
+  { "id": "hp-3", "name": "Cold Desert Biosphere Reserve", "state": "Himachal Pradesh", "lat": 32.1000, "lon": 77.9000, "area": 7770, "type": "Biosphere Reserve", "description": "Encompasses Pin Valley and surrounding high altitude sanctuaries." },
+
+  { "id": "ga-1", "name": "Mollem National Park", "state": "Goa", "lat": 15.3667, "lon": 74.4167, "area": 240, "type": "National Park", "description": "Part of the Goa Wildlife Division, covers the Bhagwan Mahavir Sanctuary." },
+  { "id": "ga-2", "name": "Salim Ali Bird Sanctuary", "state": "Goa", "lat": 15.5167, "lon": 73.8667, "area": 1.7, "type": "Wildlife Sanctuary", "description": "Mangrove habitat situated on Chorao Island." },
+
+  { "id": "gj-1", "name": "Gir National Park", "state": "Gujarat", "lat": 21.1244, "lon": 70.8242, "area": 1412, "type": "National Park", "description": "The last remaining wild habitat of the Asiatic lion." },
+  { "id": "gj-2", "name": "Vansda National Park", "state": "Gujarat", "lat": 20.7667, "lon": 73.4833, "area": 24, "type": "National Park", "description": "Teak and bamboo forests in southern Gujarat." },
+  { "id": "gj-3", "name": "Blackbuck National Park, Velavadar", "state": "Gujarat", "lat": 21.9667, "lon": 72.0333, "area": 34, "type": "National Park", "description": "Unique grassland ecosystem protecting blackbucks." },
+  { "id": "gj-4", "name": "Marine National Park, Gulf of Kutch", "state": "Gujarat", "lat": 22.4500, "lon": 69.9500, "area": 162, "type": "National Park", "description": "First marine national park in India." },
+  { "id": "gj-5", "name": "Kutch Desert Wildlife Sanctuary", "state": "Gujarat", "lat": 23.9000, "lon": 70.0000, "area": 7506, "type": "Wildlife Sanctuary", "description": "Largest wildlife sanctuary in India by area, famous for flamingos." },
+  { "id": "gj-6", "name": "Great Rann of Kutch Biosphere Reserve", "state": "Gujarat", "lat": 23.8000, "lon": 69.8000, "area": 12454, "type": "Biosphere Reserve", "description": "Largest biosphere reserve in India." },
+
+  { "id": "cg-1", "name": "Indravati National Park", "state": "Chhattisgarh", "lat": 19.0667, "lon": 80.5167, "area": 2799, "type": "Tiger Reserve", "description": "Along the Indravati River, home to the rare wild buffalo." },
+  { "id": "cg-2", "name": "Achanakmar Tiger Reserve", "state": "Chhattisgarh", "lat": 22.4000, "lon": 81.5000, "area": 914, "type": "Tiger Reserve", "description": "Sal-dominated forests in Bilaspur district." },
+  { "id": "cg-3", "name": "Kanger Ghati National Park", "state": "Chhattisgarh", "lat": 18.8333, "lon": 81.9500, "area": 200, "type": "National Park", "description": "Lush moist deciduous forest, home to Bastar Hill Myna." },
+  { "id": "cg-4", "name": "Achanakmar-Amarkantak Biosphere Reserve", "state": "Chhattisgarh/MP", "lat": 22.5833, "lon": 81.7500, "area": 3835, "type": "Biosphere Reserve", "description": "Source of Narmada, Johilla and Son rivers." },
+
+  { "id": "mn-1", "name": "Keibul Lamjao National Park", "state": "Manipur", "lat": 24.5333, "lon": 93.8000, "area": 40, "type": "National Park", "description": "World's only floating national park on Loktak Lake." },
+  
+  { "id": "mz-1", "name": "Phawngpui Blue Mountain National Park", "state": "Mizoram", "lat": 22.6333, "lon": 93.0333, "area": 50, "type": "National Park", "description": "Located on highest peak of Mizoram." },
+
+  { "id": "nl-1", "name": "Intanki National Park", "state": "Nagaland", "lat": 25.6833, "lon": 93.4333, "area": 202, "type": "National Park", "description": "Home to Hoolock Gibbon, the only ape found in India." },
+
+  { "id": "sk-1", "name": "Khangchendzonga National Park", "state": "Sikkim", "lat": 27.7000, "lon": 88.1833, "area": 1784, "type": "Biosphere Reserve", "description": "UNESCO Mixed Heritage Site protecting high altitude Himalayan ecosystems." },
+
+  { "id": "tr-1", "name": "Clouded Leopard National Park", "state": "Tripura", "lat": 23.6833, "lon": 91.2833, "area": 5, "type": "National Park", "description": "Located within Sepahijala Wildlife Sanctuary." },
+
+  { "id": "an-1", "name": "Mahatma Gandhi Marine National Park", "state": "Andaman & Nicobar Islands", "lat": 11.6000, "lon": 92.6500, "area": 281, "type": "National Park", "description": "Group of 15 islands, protects coral reefs and sea turtles." },
+  { "id": "an-2", "name": "Mount Harriet National Park", "state": "Andaman & Nicobar Islands", "lat": 11.7500, "lon": 92.7333, "area": 46, "type": "National Park", "description": "Featured on the reverse of Indian twenty rupee note." },
+  { "id": "an-3", "name": "Great Nicobar Biosphere Reserve", "state": "Andaman & Nicobar Islands", "lat": 7.0000, "lon": 93.8000, "area": 885, "type": "Biosphere Reserve", "description": "Home to the Nicobar scrubfowl, edible-nest swiftlet." }
+]

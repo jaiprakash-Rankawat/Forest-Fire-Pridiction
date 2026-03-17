@@ -8,15 +8,17 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Home", href: "/" },
+    { name: "Forest Explorer", href: "/forest-explorer" },
     { name: "Prediction", href: "/prediction" },
     { name: "Rajasthan Prediction", href: "/rajasthan-prediction" },
     { name: "Critical Zones", href: "/critical-zones" },
     { name: "Evidence", href: "/evidence" },
     { name: "Prevention", href: "/prevention" },
+    { name: "Safety Center", href: "/safety-center" },
   ];
 
   return (
-    <nav className="bg-gradient-to-r from-fire-800 to-fire-600 shadow-lg sticky top-0 z-50">
+    <nav className="bg-gradient-to-r from-fire-800 to-fire-600 shadow-lg sticky top-0 z-[9999]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center space-x-2">
