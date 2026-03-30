@@ -1,0 +1,181 @@
+/* firms.css */
+
+.firms-map-wrapper {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 80px); /* Adjust based on your header */
+  background: #0f172a; /* Tailwind slate-900 */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.firms-map-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Base dark theme tweaks for Leaflet */
+.leaflet-container {
+  background: #0f172a !important;
+  font-family: 'Inter', system-ui, sans-serif !important;
+}
+
+/* Controls overlay constraints */
+.leaflet-control-zoom {
+  border: none !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;
+}
+
+.leaflet-control-zoom a {
+  background: rgba(30, 41, 59, 0.9) !important;
+  color: #94a3b8 !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  transition: all 0.2s ease;
+}
+
+.leaflet-control-zoom a:hover {
+  background: rgba(51, 65, 85, 1) !important;
+  color: #f8fafc !important;
+}
+
+/* Custom popups */
+.leaflet-popup-content-wrapper {
+  background: rgba(15, 23, 42, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #f8fafc !important;
+  border-radius: 8px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5) !important;
+  padding: 0 !important;
+}
+
+.leaflet-popup-tip {
+  background: rgba(15, 23, 42, 0.95) !important;
+}
+
+.firms-popup {
+  padding: 8px 4px;
+}
+
+.firms-popup h4 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #ef4444; /* red-500 */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 6px;
+}
+
+.firms-popup p {
+  margin: 4px 0;
+  font-size: 13px;
+  color: #cbd5e1; /* slate-300 */
+}
+
+.firms-popup strong {
+  color: #f8fafc;
+}
+
+/* Green Boundary outline animation */
+.km-boundary-path {
+  stroke: #22c55e !important;
+  fill: #16a34a !important;
+  stroke-width: 3px !important;
+  fill-opacity: 0.1 !important;
+  transition: stroke-dashoffset 3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Marker glow */
+.fire-marker-pulse {
+  animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.4); opacity: 0.4; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+/* Slider and UI Overlay */
+.firms-overlay-panel {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 20px;
+  width: 320px;
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.firms-overlay-panel h3 {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.timeline-container {
+  margin-top: 20px;
+}
+
+.timeline-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.timeline-slider {
+  width: 100%;
+  -webkit-appearance: none;
+  background: rgba(255, 255, 255, 0.1);
+  height: 6px;
+  border-radius: 4px;
+  outline: none;
+}
+
+.timeline-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #3b82f6;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+  transition: transform 0.1s ease;
+}
+
+.timeline-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.stat-row:last-child {
+  border-bottom: none;
+}
+
+.stat-label {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.stat-value {
+  font-weight: 600;
+  color: #f8fafc;
+}

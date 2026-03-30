@@ -10,11 +10,10 @@ export default function Navbar() {
     { name: "Home", href: "/" },
     { name: "Forest Explorer", href: "/forest-explorer" },
     { name: "Prediction", href: "/prediction" },
-    { name: "Rajasthan Prediction", href: "/rajasthan-prediction" },
     { name: "Critical Zones", href: "/critical-zones" },
     { name: "Evidence", href: "/evidence" },
     { name: "Prevention", href: "/prevention" },
-    { name: "Safety Center", href: "/safety-center" },
+    { name: "Kumbhalgarh Monitor", href: "/kumbhalgarh-monitor" },
   ];
 
   return (
