@@ -1,20 +1,24 @@
-# Wildlife and Forest Statistics (India)
-There are a total of:
-1. 107 National Parks
-2. 54 Tiger Reserves
-3. 573 Wildlife Sanctuaries
-4. 18 Biosphere Reserves
 
-# Data Sources
-You can get coordinates, maps, and shapefiles from:
-1. Wildlife Institute of India database
-2. Global Forest Watch
-3. NASA FIRMS fire dataset
-4. Forest Survey of India
-5. Google Earth
+1. Forest survey of India
+2. google earth
+3. GIS Data
+### A national park is a special type of forest area protected by the government to conserve wildlife, plants, and ecosystems.
 
-These sources provide:
-- Forest boundaries
-- Satellite fire alerts
-- Forest cover data
-- GIS shapefiles
+### Human activities like hunting, cutting trees, grazing, or construction are strictly restricted.
+
+<!-- Forest In India -->
+1. Total National Parks: 107
+2. Total Tiger Reserves: 54
+3. Total Wildlife Sanctuaries: 573
+4. Total Biosphere Reserves: 18
+
+
+# Official definition of a forest
+
+### According to the Food and Agriculture Organization, an area is considered a forest if:
+
+- The land area is more than 0.5 hectares (about 1.2 acres).
+
+- Trees are higher than 5 meters.
+
+- Tree canopy cover is more than 10% of the land.
