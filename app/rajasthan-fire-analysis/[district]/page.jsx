@@ -19,6 +19,11 @@ const DistrictMapClient = dynamic(
   }
 );
 
+const FirePointSearch = dynamic(
+  () => import('../FirePointSearch'),
+  { ssr: false, loading: () => <div className="h-[200px] bg-slate-900 rounded-xl animate-pulse"></div> }
+);
+
 import { RAJASTHAN_DISTRICTS } from '../../../lib/rajasthan-districts';
 
 const DISTRICTS = RAJASTHAN_DISTRICTS.reduce((acc, d) => {
@@ -453,6 +458,14 @@ export default function DistrictAnalysisPage({ params }) {
               </div>
             </section>
           )}
+
+          {/* ===== SECTION: Fire Zone Point Search ===== */}
+          <FirePointSearch
+            mode="district"
+            districtSlug={slug}
+            districtName={district.name}
+            center={district.center}
+          />
 
           {/* ===== SECTION: Did You Know? ===== */}
           {district.funFact && (
