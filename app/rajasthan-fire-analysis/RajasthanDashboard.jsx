@@ -647,7 +647,7 @@ export default function RajasthanDashboard() {
   return (
     <div className="space-y-6 mt-6">
       {/* Summary Stats */}
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
         <Link
           href="/rajasthan-fire-analysis/fire-points-chart"
           className="bg-slate-900/70 border border-slate-700/50 rounded-xl p-4 backdrop-blur-sm hover:border-blue-500/40 hover:bg-slate-800/50 transition-all group block"
@@ -662,10 +662,11 @@ export default function RajasthanDashboard() {
             View Chart Analysis{" "}
           </div>
         </Link>
-        {["Very High", "High", "Moderate", "Low", "Minimal"].map((level) => (
-          <div
+        {["Very High", "High", "Moderate", "Low"].map((level) => (
+          <Link
+            href={`/rajasthan-fire-analysis/fire-points-chart?riskLevel=${level}`}
             key={level}
-            className="bg-slate-900/70 border border-slate-700/50 rounded-xl p-4 backdrop-blur-sm"
+            className="bg-slate-900/70 border border-slate-700/50 rounded-xl p-4 backdrop-blur-sm group hover:border-blue-500/40 hover:bg-slate-800/50 transition-all cursor-pointer block"
           >
             <div className="text-sm text-slate-500 mb-1">{level} Risk</div>
             <div
@@ -675,7 +676,10 @@ export default function RajasthanDashboard() {
               {riskCounts[level] || 0}
               <span className="text-xs text-slate-500 ml-1">districts</span>
             </div>
-          </div>
+            <div className="text-xs text-blue-400/70 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+              View Chart Analysis &rarr;
+            </div>
+          </Link>
         ))}
       </div>
 

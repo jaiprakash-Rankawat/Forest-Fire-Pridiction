@@ -2,7 +2,7 @@
   "ajmer": {
     "name": "Ajmer",
     "firePoints": 22,
-    "riskLevel": "Very High",
+    "riskLevel": "Moderate",
     "zones": {
       "Very High Fire Zone": {
         "area": 338.8,
@@ -26,7 +26,7 @@
   "alwar": {
     "name": "Alwar",
     "firePoints": 22,
-    "riskLevel": "Very High",
+    "riskLevel": "Moderate",
     "zones": {
       "Very High Fire Zone": {
         "area": 258.5,
@@ -50,7 +50,7 @@
   "banswara": {
     "name": "Banswara",
     "firePoints": 27,
-    "riskLevel": "Very High",
+    "riskLevel": "Moderate",
     "zones": {
       "Very High Fire Zone": {
         "area": 588.1,
@@ -98,7 +98,7 @@
   "barmer": {
     "name": "Barmer",
     "firePoints": 9,
-    "riskLevel": "Very High",
+    "riskLevel": "Low",
     "zones": {
       "Very High Fire Zone": {
         "area": 773.2,
@@ -122,7 +122,7 @@
   "bharatpur": {
     "name": "Bharatpur",
     "firePoints": 12,
-    "riskLevel": "Very High",
+    "riskLevel": "Low",
     "zones": {
       "Very High Fire Zone": {
         "area": 336.3,
@@ -146,7 +146,7 @@
   "bhilwara": {
     "name": "Bhilwara",
     "firePoints": 26,
-    "riskLevel": "Very High",
+    "riskLevel": "Moderate",
     "zones": {
       "Very High Fire Zone": {
         "area": 575.2,
@@ -170,7 +170,7 @@
   "bikaner": {
     "name": "Bikaner",
     "firePoints": 9,
-    "riskLevel": "Very High",
+    "riskLevel": "Low",
     "zones": {
       "Very High Fire Zone": {
         "area": 492.3,
@@ -194,7 +194,7 @@
   "bundi": {
     "name": "Bundi",
     "firePoints": 28,
-    "riskLevel": "Very High",
+    "riskLevel": "Moderate",
     "zones": {
       "Very High Fire Zone": {
         "area": 630.9,
@@ -242,7 +242,7 @@
   "churu": {
     "name": "Churu",
     "firePoints": 6,
-    "riskLevel": "Very High",
+    "riskLevel": "Low",
     "zones": {
       "Very High Fire Zone": {
         "area": 211.4,
@@ -266,7 +266,7 @@
   "dausa": {
     "name": "Dausa",
     "firePoints": 5,
-    "riskLevel": "Very High",
+    "riskLevel": "Low",
     "zones": {
       "Very High Fire Zone": {
         "area": 239.4,
@@ -290,7 +290,7 @@
   "dholpur": {
     "name": "Dholpur",
     "firePoints": 22,
-    "riskLevel": "Very High",
+    "riskLevel": "Moderate",
     "zones": {
       "Very High Fire Zone": {
         "area": 668.5,
@@ -314,7 +314,7 @@
   "dungarpur": {
     "name": "Dungarpur",
     "firePoints": 26,
-    "riskLevel": "Very High",
+    "riskLevel": "Moderate",
     "zones": {
       "Very High Fire Zone": {
         "area": 277.7,
@@ -338,7 +338,7 @@
   "hanumangarh": {
     "name": "Hanumangarh",
     "firePoints": 13,
-    "riskLevel": "Very High",
+    "riskLevel": "Low",
     "zones": {
       "Very High Fire Zone": {
         "area": 359.5,
@@ -362,7 +362,7 @@
   "jaipur": {
     "name": "Jaipur",
     "firePoints": 33,
-    "riskLevel": "Very High",
+    "riskLevel": "High",
     "zones": {
       "Very High Fire Zone": {
         "area": 427.6,
@@ -386,7 +386,7 @@
   "jaisalmer": {
     "name": "Jaisalmer",
     "firePoints": 11,
-    "riskLevel": "Very High",
+    "riskLevel": "Low",
     "zones": {
       "Very High Fire Zone": {
         "area": 370.7,
@@ -410,7 +410,7 @@
   "jalore": {
     "name": "Jalore",
     "firePoints": 12,
-    "riskLevel": "Very High",
+    "riskLevel": "Low",
     "zones": {
       "Very High Fire Zone": {
         "area": 356.8,
@@ -434,7 +434,7 @@
   "jhalawar": {
     "name": "Jhalawar",
     "firePoints": 43,
-    "riskLevel": "Very High",
+    "riskLevel": "High",
     "zones": {
       "Very High Fire Zone": {
         "area": 516.8,
@@ -458,7 +458,7 @@
   "jhunjhunu": {
     "name": "Jhunjhunu",
     "firePoints": 7,
-    "riskLevel": "Very High",
+    "riskLevel": "Low",
     "zones": {
       "Very High Fire Zone": {
         "area": 556.6,
@@ -482,7 +482,7 @@
   "jodhpur": {
     "name": "Jodhpur",
     "firePoints": 12,
-    "riskLevel": "Very High",
+    "riskLevel": "Low",
     "zones": {
       "Very High Fire Zone": {
         "area": 384.6,
@@ -506,7 +506,7 @@
   "karauli": {
     "name": "Karauli",
     "firePoints": 37,
-    "riskLevel": "Very High",
+    "riskLevel": "High",
     "zones": {
       "Very High Fire Zone": {
         "area": 448.4,
@@ -530,7 +530,7 @@
   "kota": {
     "name": "Kota",
     "firePoints": 34,
-    "riskLevel": "Very High",
+    "riskLevel": "High",
     "zones": {
       "Very High Fire Zone": {
         "area": 513,
@@ -554,7 +554,7 @@
   "nagaur": {
     "name": "Nagaur",
     "firePoints": 6,
-    "riskLevel": "Very High",
+    "riskLevel": "Low",
     "zones": {
       "Very High Fire Zone": {
         "area": 439,
@@ -578,7 +578,7 @@
   "pali": {
     "name": "Pali",
     "firePoints": 41,
-    "riskLevel": "Very High",
+    "riskLevel": "High",
     "zones": {
       "Very High Fire Zone": {
         "area": 247.5,
@@ -626,7 +626,7 @@
   "rajsamand": {
     "name": "Rajsamand",
     "firePoints": 38,
-    "riskLevel": "Very High",
+    "riskLevel": "High",
     "zones": {
       "Very High Fire Zone": {
         "area": 331.3,
@@ -650,7 +650,7 @@
   "sawai-madhopur": {
     "name": "Sawai Madhopur",
     "firePoints": 41,
-    "riskLevel": "Very High",
+    "riskLevel": "High",
     "zones": {
       "Very High Fire Zone": {
         "area": 326.8,
@@ -674,7 +674,7 @@
   "sikar": {
     "name": "Sikar",
     "firePoints": 16,
-    "riskLevel": "Very High",
+    "riskLevel": "Moderate",
     "zones": {
       "Very High Fire Zone": {
         "area": 253.6,
@@ -722,7 +722,7 @@
   "sri-ganganagar": {
     "name": "Sri Ganganagar",
     "firePoints": 4,
-    "riskLevel": "Moderate",
+    "riskLevel": "Minimal",
     "zones": {
       "High Fire Zone": {
         "area": 452.7,
@@ -742,7 +742,7 @@
   "tonk": {
     "name": "Tonk",
     "firePoints": 27,
-    "riskLevel": "Very High",
+    "riskLevel": "Moderate",
     "zones": {
       "Very High Fire Zone": {
         "area": 349.1,

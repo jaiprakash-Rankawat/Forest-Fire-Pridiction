@@ -289,11 +289,12 @@ async function processDistrict(district, allFirePoints) {
   const kmlPath = path.join(FIRE_ZONES_DIR, `${district.slug}_fire_zones.kml`);
   fs.writeFileSync(kmlPath, kml);
 
-  // Determine risk level from zones
-  let riskLevel = 'Low';
-  if (zoneStats['Very High Fire Zone'] && zoneStats['Very High Fire Zone'].area > 50) riskLevel = 'Very High';
-  else if (zoneStats['Very High Fire Zone']) riskLevel = 'High';
-  else if (zoneStats['High Fire Zone']) riskLevel = 'Moderate';
+  // Determine district overall risk level from absolute fire counts
+  let riskLevel = 'Minimal';
+  if (insidePoints.length > 45) riskLevel = 'Very High';
+  else if (insidePoints.length > 30) riskLevel = 'High';
+  else if (insidePoints.length > 15) riskLevel = 'Moderate';
+  else if (insidePoints.length >= 5) riskLevel = 'Low';
 
   const years = analysisPoints
     .map(p => p.acq_date?.substring(0, 4))

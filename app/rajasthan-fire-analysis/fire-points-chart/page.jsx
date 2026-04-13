@@ -75,8 +75,16 @@ export default function FirePointsChartPage() {
   const [loading, setLoading] = useState(true);
   const [sortBy, setSortBy] = useState("name"); // 'name', 'fires', 'aravali'
   const [viewMode, setViewMode] = useState("all"); // 'all', 'aravali', 'comparison'
+  const [filterRiskLevel, setFilterRiskLevel] = useState(null);
 
   useEffect(() => {
+    // Check if we came from dashboard with a risk level filter
+    const search = new URLSearchParams(window.location.search);
+    const risk = search.get("riskLevel");
+    if (risk) {
+      setFilterRiskLevel(risk);
+    }
+
     async function loadFireData() {
       try {
         const response = await fetch("/fire_zones/district_summary.json");
@@ -138,6 +146,11 @@ export default function FirePointsChartPage() {
     if (!chartData) return [];
 
     let data = [...chartData.districts];
+    
+    // Apply risk level filter if active
+    if (filterRiskLevel) {
+      data = data.filter((d) => d.riskLevel === filterRiskLevel);
+    }
 
     switch (sortBy) {
       case "fires":
@@ -234,17 +247,30 @@ export default function FirePointsChartPage() {
               href="/rajasthan-fire-analysis"
               className="text-sm text-slate-500 hover:text-slate-300 transition-colors mb-2 inline-block"
             >
-              &larr; Back to Rajasthan Dashboard
+              &larr; Back to Dashboard
             </Link>
             <h1 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-400 via-red-400 to-yellow-400">
-              Rajasthan Fire Points Analysis
+              {filterRiskLevel ? `${filterRiskLevel} Risk Districts Analysis` : "Rajasthan Fire Points Analysis"}
             </h1>
             <p className="text-slate-400 mt-1">
-              Comprehensive comparison of fire incidents across all 33 districts
-              and Aravali Range
+              {filterRiskLevel 
+                ? `Comparing fire incidents precisely for the ${filterRiskLevel} Risk category.`
+                : "Comprehensive comparison of fire incidents across all 33 districts and Aravali Range"
+              }
             </p>
           </div>
           <div className="flex gap-3 mt-3 md:mt-0">
+            {filterRiskLevel && (
+              <button
+                onClick={() => {
+                  setFilterRiskLevel(null);
+                  window.history.replaceState({}, '', window.location.pathname);
+                }}
+                className="px-4 py-2 bg-red-500/20 text-red-400 border border-red-500/40 rounded-lg hover:bg-red-500/30 transition-all font-medium text-sm"
+              >
+                Clear Filter ✕
+              </button>
+            )}
             <div className="px-4 py-2 bg-slate-800/60 border border-slate-700/50 rounded-lg text-center backdrop-blur-sm">
               <div className="text-2xl font-bold text-orange-400">
                 {chartData.totalFirePoints.toLocaleString()}
@@ -398,10 +424,15 @@ export default function FirePointsChartPage() {
 
         {/* Chart */}
         <div className="bg-slate-900/80 border border-slate-700/50 rounded-xl p-6 backdrop-blur-sm">
-          <h2 className="text-xl font-bold text-slate-200 mb-6">
-            {viewMode === "all" && "Fire Points - All 33 Districts"}
+          <h2 className="text-xl font-bold text-slate-200 mb-6 flex items-center gap-2">
+            {viewMode === "all" && "Fire Points - All Districts"}
             {viewMode === "aravali" && "Fire Points - Aravali Range Districts"}
             {viewMode === "comparison" && "Aravali Range vs Other Districts"}
+            {filterRiskLevel && (
+              <span className="text-xs bg-orange-500/20 text-orange-400 px-3 py-1 rounded-full border border-orange-500/30">
+                Filtered: {filterRiskLevel} Risk
+              </span>
+            )}
           </h2>
 
           <ResponsiveContainer width="100%" height={500}>
