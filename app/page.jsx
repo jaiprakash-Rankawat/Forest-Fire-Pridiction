@@ -16,8 +16,14 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
-              href="/prediction"
+              href="/rajasthan-fire-analysis"
               className="bg-white text-fire-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors duration-200"
+            >
+              🗺️ Rajasthan Fire Analysis
+            </Link>
+            <Link
+              href="/prediction"
+              className="bg-fire-800 text-white px-8 py-3 rounded-lg font-bold hover:bg-fire-900 transition-colors duration-200"
             >
               Try AI Prediction
             </Link>

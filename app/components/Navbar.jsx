@@ -14,6 +14,7 @@ export default function Navbar() {
     { name: "Evidence", href: "/evidence" },
     { name: "Prevention", href: "/prevention" },
     { name: "Kumbhalgarh Monitor", href: "/kumbhalgarh-monitor" },
+    { name: "Rajasthan Fire Analysis", href: "/rajasthan-fire-analysis" },
   ];
 
   return (

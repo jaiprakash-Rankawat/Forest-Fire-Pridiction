@@ -1,3 +1,4 @@
+'use client';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 
@@ -15,11 +16,6 @@ const FirmsMapClient = dynamic(
     )
   }
 );
-
-export const metadata = {
-  title: 'NASA FIRMS Fire Map - Kumbhalgarh',
-  description: 'Interactive map visualizing NASA FIRMS heat signatures bounded within the Kumbhalgarh Wildlife Sanctuary.',
-};
 
 export default function FirmsMapPage() {
   return (

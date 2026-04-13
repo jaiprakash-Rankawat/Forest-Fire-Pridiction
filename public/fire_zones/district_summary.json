@@ -1,0 +1,790 @@
+{
+  "ajmer": {
+    "name": "Ajmer",
+    "firePoints": 22,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 338.8,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 1121.4,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 2102.6,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 6934.8,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2025"
+  },
+  "alwar": {
+    "name": "Alwar",
+    "firePoints": 22,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 258.5,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 851.7,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 2003.8,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 4770.4,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2025"
+  },
+  "banswara": {
+    "name": "Banswara",
+    "firePoints": 27,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 588.1,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 1125.6,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 2542.2,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 4518.2,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2025"
+  },
+  "baran": {
+    "name": "Baran",
+    "firePoints": 46,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 460.8,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 1108.2,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 2150,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 7021.3,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2025"
+  },
+  "barmer": {
+    "name": "Barmer",
+    "firePoints": 9,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 773.2,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 1735.6,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 2702.4,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 18249.5,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2023"
+  },
+  "bharatpur": {
+    "name": "Bharatpur",
+    "firePoints": 12,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 336.3,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 596.9,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 1346.5,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 2892.5,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2025"
+  },
+  "bhilwara": {
+    "name": "Bhilwara",
+    "firePoints": 26,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 575.2,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 1597,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 3635.4,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 10083.8,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2025"
+  },
+  "bikaner": {
+    "name": "Bikaner",
+    "firePoints": 9,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 492.3,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 1122,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 2179.8,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 30296.3,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2025"
+  },
+  "bundi": {
+    "name": "Bundi",
+    "firePoints": 28,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 630.9,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 1465.2,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 3301.3,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 5788.2,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2025"
+  },
+  "chittorgarh": {
+    "name": "Chittorgarh",
+    "firePoints": 46,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 366.5,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 1104.5,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 2962.8,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 7828.8,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2025"
+  },
+  "churu": {
+    "name": "Churu",
+    "firePoints": 6,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 211.4,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 458.8,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 2119.7,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 13869.6,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2023"
+  },
+  "dausa": {
+    "name": "Dausa",
+    "firePoints": 5,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 239.4,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 680.7,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 1747,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 3427.6,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2019–2025"
+  },
+  "dholpur": {
+    "name": "Dholpur",
+    "firePoints": 22,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 668.5,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 1731.2,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 3408.5,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 6597.3,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2025"
+  },
+  "dungarpur": {
+    "name": "Dungarpur",
+    "firePoints": 26,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 277.7,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 988.6,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 1692.2,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 3787.7,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2025"
+  },
+  "hanumangarh": {
+    "name": "Hanumangarh",
+    "firePoints": 13,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 359.5,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 1166.9,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 2043.2,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 9715.3,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2023"
+  },
+  "jaipur": {
+    "name": "Jaipur",
+    "firePoints": 33,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 427.6,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 1073,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 2643.7,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 9855.7,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2025"
+  },
+  "jaisalmer": {
+    "name": "Jaisalmer",
+    "firePoints": 11,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 370.7,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 1234.4,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 2705,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 38510.9,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2025"
+  },
+  "jalore": {
+    "name": "Jalore",
+    "firePoints": 12,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 356.8,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 1197.8,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 3107.9,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 10685.9,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2023"
+  },
+  "jhalawar": {
+    "name": "Jhalawar",
+    "firePoints": 43,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 516.8,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 1227,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 2247.5,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 6358.3,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2025"
+  },
+  "jhunjhunu": {
+    "name": "Jhunjhunu",
+    "firePoints": 7,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 556.6,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 1411.4,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 2279.1,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 5934.1,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2023"
+  },
+  "jodhpur": {
+    "name": "Jodhpur",
+    "firePoints": 12,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 384.6,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 1067.6,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 2525.9,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 13155.5,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2019–2025"
+  },
+  "karauli": {
+    "name": "Karauli",
+    "firePoints": 37,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 448.4,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 1091.1,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 2079.4,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 5026,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2025"
+  },
+  "kota": {
+    "name": "Kota",
+    "firePoints": 34,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 513,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 1655.5,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 2880.4,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 5096.6,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2025"
+  },
+  "nagaur": {
+    "name": "Nagaur",
+    "firePoints": 6,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 439,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 1274.8,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 2669,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 11025.8,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2019–2025"
+  },
+  "pali": {
+    "name": "Pali",
+    "firePoints": 41,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 247.5,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 1664.6,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 4964.9,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 9931.9,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2025"
+  },
+  "pratapgarh": {
+    "name": "Pratapgarh",
+    "firePoints": 65,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 655.5,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 1506.1,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 2452.4,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 4443.6,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2025"
+  },
+  "rajsamand": {
+    "name": "Rajsamand",
+    "firePoints": 38,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 331.3,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 824.5,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 2636.9,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 4643.4,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2025"
+  },
+  "sawai-madhopur": {
+    "name": "Sawai Madhopur",
+    "firePoints": 41,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 326.8,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 749.4,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 1438.9,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 5035.9,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2025"
+  },
+  "sikar": {
+    "name": "Sikar",
+    "firePoints": 16,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 253.6,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 766.8,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 2734.5,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 7740.7,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2025"
+  },
+  "sirohi": {
+    "name": "Sirohi",
+    "firePoints": 46,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 380.5,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 1577.8,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 3193.9,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 5142.7,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2025"
+  },
+  "sri-ganganagar": {
+    "name": "Sri Ganganagar",
+    "firePoints": 4,
+    "riskLevel": "Moderate",
+    "zones": {
+      "High Fire Zone": {
+        "area": 452.7,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 1342.8,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 10948.8,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2024"
+  },
+  "tonk": {
+    "name": "Tonk",
+    "firePoints": 27,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 349.1,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 754.5,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 1697.4,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 7212,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2025"
+  },
+  "udaipur": {
+    "name": "Udaipur",
+    "firePoints": 71,
+    "riskLevel": "Very High",
+    "zones": {
+      "Very High Fire Zone": {
+        "area": 321.8,
+        "color": "#FF0000"
+      },
+      "High Fire Zone": {
+        "area": 1470.2,
+        "color": "#FF8C00"
+      },
+      "Moderate Fire Zone": {
+        "area": 4608.2,
+        "color": "#FFD700"
+      },
+      "Low Fire Zone": {
+        "area": 9104.6,
+        "color": "#228B22"
+      }
+    },
+    "yearRange": "2018–2025"
+  }
+}
