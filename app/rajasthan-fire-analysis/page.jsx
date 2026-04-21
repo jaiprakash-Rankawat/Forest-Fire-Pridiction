@@ -29,11 +29,8 @@ export default function RajasthanFireAnalysisPage() {
         <div className="relative max-w-[1600px] mx-auto px-4 md:px-6 py-8 md:py-12">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <div>
-              <Link href="/" className="text-sm text-slate-500 hover:text-slate-300 transition-colors mb-2 inline-block">
-                ← Back to Home
-              </Link>
               <h1 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-400 via-orange-400 to-yellow-400">
-                🔥 Rajasthan Forest Fire Analysis
+                🔥 Rajasthan Fire Analysis
               </h1>
               <p className="text-slate-400 mt-2 max-w-2xl">
                 Comprehensive fire zone mapping across all 33 districts + Aravalli Range using Kernel Density Estimation on NASA FIRMS satellite data (2018–2025)

@@ -8,13 +8,11 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Home", href: "/" },
+    { name: "Aravali Range", href: "/rajasthan-fire-analysis/aravali-range" },
+    { name: "Fire History", href: "/fire-history" },
     { name: "Forest Explorer", href: "/forest-explorer" },
-    { name: "Prediction", href: "/prediction" },
-    { name: "Critical Zones", href: "/critical-zones" },
-    { name: "Evidence", href: "/evidence" },
+    { name: "About", href: "/about" },
     { name: "Prevention", href: "/prevention" },
-    { name: "Kumbhalgarh Monitor", href: "/kumbhalgarh-monitor" },
-    { name: "Rajasthan Fire Analysis", href: "/rajasthan-fire-analysis" },
   ];
 
   return (
@@ -24,7 +22,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center space-x-2">
             <span className="text-3xl">🔥</span>
             <span className="text-white font-bold text-xl">
-              Forest Fire Prediction
+              Rajasthan Fire Analysis
             </span>
           </Link>
 

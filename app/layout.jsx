@@ -3,14 +3,14 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 export const metadata = {
-  title: 'Forest Fire Prediction | Understanding & Preventing Wildfires',
-  description: 'Educational platform for understanding forest fire causes, predicting fire risk, and learning prevention strategies based on real-world case studies.',
+  title: 'Rajasthan Fire Analysis | NASA FIRMS Forest Fire Monitoring',
+  description: 'Comprehensive forest fire monitoring across all 33 districts and Aravalli Range of Rajasthan using NASA FIRMS satellite data, KDE analysis, and real-time GIS mapping.',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-gradient-to-b from-orange-50 to-white">
+      <body className="bg-slate-950">
         <Navbar />
         <main className="min-h-screen">
           {children}

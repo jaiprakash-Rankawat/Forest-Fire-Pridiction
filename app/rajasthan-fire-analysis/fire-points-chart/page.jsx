@@ -73,9 +73,10 @@ const COLORS = {
 export default function FirePointsChartPage() {
   const [chartData, setChartData] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [sortBy, setSortBy] = useState("name"); // 'name', 'fires', 'aravali'
+  const [sortBy, setSortBy] = useState("fires"); // 'name', 'fires', 'aravali'
   const [viewMode, setViewMode] = useState("all"); // 'all', 'aravali', 'comparison'
   const [filterRiskLevel, setFilterRiskLevel] = useState(null);
+  const [canonicalStats, setCanonicalStats] = useState(null); // from /api/fire-stats
 
   useEffect(() => {
     // Check if we came from dashboard with a risk level filter
@@ -84,6 +85,12 @@ export default function FirePointsChartPage() {
     if (risk) {
       setFilterRiskLevel(risk);
     }
+
+    // Load canonical total from CSV (single source of truth)
+    fetch('/api/fire-stats')
+      .then(r => r.json())
+      .then(s => setCanonicalStats(s))
+      .catch(() => {});
 
     async function loadFireData() {
       try {
@@ -273,11 +280,12 @@ export default function FirePointsChartPage() {
             )}
             <div className="px-4 py-2 bg-slate-800/60 border border-slate-700/50 rounded-lg text-center backdrop-blur-sm">
               <div className="text-2xl font-bold text-orange-400">
-                {chartData.totalFirePoints.toLocaleString()}
+                {canonicalStats ? canonicalStats.totalRecords.toLocaleString() : chartData.totalFirePoints.toLocaleString()}
               </div>
               <div className="text-xs text-slate-500 uppercase tracking-wider">
-                Total Fire Points
+                Total Fire Records
               </div>
+              <div className="text-[10px] text-slate-600 mt-0.5">NASA FIRMS · 2018–2025</div>
             </div>
             <div className="px-4 py-2 bg-slate-800/60 border border-yellow-500/40 rounded-lg text-center backdrop-blur-sm">
               <div className="text-2xl font-bold text-yellow-400">

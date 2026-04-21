@@ -317,6 +317,7 @@ export default function RajasthanDashboard() {
   const [sortBy, setSortBy] = useState("risk");
   const [view, setView] = useState("map"); // 'map' or 'grid'
   const [totalFirePoints, setTotalFirePoints] = useState(0);
+  const [canonicalTotal, setCanonicalTotal] = useState(null); // from /api/fire-stats (CSV ground truth)
 
   useEffect(() => {
     if (mapInstanceRef.current) return;
@@ -356,6 +357,12 @@ export default function RajasthanDashboard() {
 
   async function loadDashboardData(map) {
     try {
+      // Load canonical stats from CSV (single source of truth)
+      fetch('/api/fire-stats')
+        .then(r => r.json())
+        .then(s => setCanonicalTotal(s.totalRecords))
+        .catch(() => {});
+
       // Load district summary
       const summaryRes = await fetch("/fire_zones/district_summary.json");
       const summaryData = await summaryRes.json();
@@ -640,9 +647,11 @@ export default function RajasthanDashboard() {
     });
   }
 
-  const totalFires = summary
+  // Use canonical CSV total if available, otherwise fall back to district_summary sum
+  const summaryTotal = summary
     ? Object.values(summary).reduce((s, d) => s + (d.firePoints || 0), 0)
     : 0;
+  const totalFires = canonicalTotal ?? summaryTotal;
 
   return (
     <div className="space-y-6 mt-6">
@@ -790,13 +799,21 @@ export default function RajasthanDashboard() {
           {/* Fire points counter badge */}
           {totalFirePoints > 0 && !loading && (
             <div className="absolute top-4 left-4 bg-slate-900/90 backdrop-blur-md border border-red-500/30 rounded-lg px-3 py-2 z-[1000] shadow-xl">
-              <div className="flex items-center gap-2">
-                <span className="w-2.5 h-2.5 bg-red-500 rounded-full animate-pulse"></span>
-                <span className="text-xs text-slate-300">
-                  <strong className="text-red-400">{totalFirePoints}</strong>{" "}
-                  fire points loaded across{" "}
-                  <strong className="text-orange-400">33</strong> districts
-                </span>
+              <div className="flex flex-col gap-1">
+                <div className="flex items-center gap-2">
+                  <span className="w-2.5 h-2.5 bg-red-500 rounded-full animate-pulse"></span>
+                  <span className="text-xs text-slate-300">
+                    <strong className="text-red-400">{totalFirePoints}</strong>{" "}
+                    hotspot markers on map
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="w-2.5 h-2.5 bg-orange-500 rounded-full"></span>
+                  <span className="text-xs text-slate-300">
+                    <strong className="text-orange-400">{canonicalTotal ?? '...'}</strong>{" "}
+                    total NASA FIRMS records
+                  </span>
+                </div>
               </div>
             </div>
           )}
